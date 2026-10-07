@@ -1,0 +1,10 @@
+{
+  "name": "quantpylab-agents",
+  "description": "QuantPyLab custom subagents: research-reviewer and financial-report-extractor (migrated from .opencode/agents, general excluded).",
+  "source": {
+    "source": "github",
+    "repo": "hrzzzrh/QuantPyLab"
+  },
+  "author": "hrzzzrh",
+  "homepage": "https://github.com/hrzzzrh/QuantPyLab"
+}

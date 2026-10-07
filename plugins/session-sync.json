@@ -1,0 +1,10 @@
+{
+  "name": "session-sync",
+  "description": "Sync ZCode conversations across devices via Cloudflare Workers. Install on every machine — sessions stay in sync automatically.",
+  "source": {
+    "source": "github",
+    "repo": "Thebored1/session-sync"
+  },
+  "author": "Thebored1",
+  "homepage": "https://github.com/Thebored1/session-sync"
+}

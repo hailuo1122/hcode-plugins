@@ -1,0 +1,10 @@
+{
+  "name": "codebase-quality-review",
+  "description": "Read-only whole-codebase quality review and report verification skills.",
+  "source": {
+    "source": "github",
+    "repo": "LinnetCodes/codebase-quality-review"
+  },
+  "author": "LinnetCodes",
+  "homepage": "https://github.com/LinnetCodes/codebase-quality-review"
+}

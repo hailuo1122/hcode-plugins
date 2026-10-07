@@ -1,0 +1,20 @@
+{
+  "name": "hermes-by-everythings",
+  "description": "多平台多语言编码增强套件。39 Agent + 33 Skill + 22 Command + 83 Rules + Ralph 自主循环。支持 TS/Python/Rust/Go/Java/Kotlin 等 10 种语言。",
+  "source": {
+    "source": "github",
+    "repo": "ViewWay/hermes-by-everythings"
+  },
+  "author": {
+    "name": "ViewWay",
+    "url": "https://github.com/ViewWay"
+  },
+  "homepage": "https://github.com/ViewWay/hermes-by-everythings",
+  "tags": [
+    "coding-enhancement",
+    "multi-language",
+    "multi-platform",
+    "tdd",
+    "code-review"
+  ]
+}

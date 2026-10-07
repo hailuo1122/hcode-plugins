@@ -1,0 +1,10 @@
+{
+  "name": "ai-ui-aesthetics",
+  "description": "前端美学增强插件。Skill（教 AI 写漂亮 UI：设计 Token、排版层级、留白、丝滑动效）+ MCP（设计调研：抓参考站、扫图取色、配色建议）。零依赖、框架无关，可跨 Agent Harness（含 DeepSeek Harness）使用。",
+  "source": {
+    "source": "github",
+    "repo": "Jaye2610/ai-ui-aesthetics"
+  },
+  "author": "jaye",
+  "homepage": "https://github.com/Jaye2610/ai-ui-aesthetics"
+}

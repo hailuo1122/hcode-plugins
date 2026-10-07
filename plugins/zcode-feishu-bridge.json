@@ -1,0 +1,18 @@
+{
+  "name": "zcode-feishu-bridge",
+  "description": "把 ZCode 会话实时镜像到飞书流式卡片：逐轮进度、项目标签、用量面板。不改 ZCode 源码、零依赖。 Mirror live ZCode sessions into Feishu streaming cards: per-turn progress, project labels and a usage panel. Zero source patching, zero dependencies.",
+  "source": {
+    "source": "github",
+    "repo": "techysy/zcode-feishu-bridge",
+    "ref": "v1.1.0"
+  },
+  "author": "techysy",
+  "homepage": "https://github.com/techysy/zcode-feishu-bridge",
+  "tags": [
+    "feishu",
+    "lark",
+    "zcode",
+    "streaming-card",
+    "bridge"
+  ]
+}

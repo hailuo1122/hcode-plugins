@@ -1,0 +1,10 @@
+{
+  "name": "blindfold",
+  "description": "Block tool calls that would pull a registered .env secret into the model context, raw or in any transform form (base64/hex/reversed/url-encoded).",
+  "source": {
+    "source": "github",
+    "repo": "wicahma/blindfold"
+  },
+  "author": "wicahma",
+  "homepage": "https://github.com/wicahma/blindfold"
+}

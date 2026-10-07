@@ -1,0 +1,15 @@
+{
+  "name": "honcho",
+  "description": "Persistent memory via Honcho: automatic memory injection at session start, per-turn capture of prompts, tool actions and replies, secret redaction, per-project sessions, and on-demand recall MCP tools.",
+  "source": {
+    "source": "github",
+    "repo": "rakphao/zcode-honcho"
+  },
+  "author": "rakphao",
+  "homepage": "https://github.com/rakphao/zcode-honcho",
+  "tags": [
+    "memory",
+    "honcho",
+    "mcp"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "antigravity-proxy",
+  "description": "Access Claude & Gemini models via Google Antigravity OAuth. Auto-starts a local OpenAI-compatible proxy when ZCode launches — no manual setup needed.",
+  "source": {
+    "source": "github",
+    "repo": "shubham-kr2002/zcode-antigravity-auth"
+  },
+  "author": {
+    "name": "ZCode Antigravity",
+    "url": "https://github.com/zcode-antigravity-proxy"
+  },
+  "homepage": "https://github.com/shubham-kr2002/zcode-antigravity-auth",
+  "tags": [
+    "antigravity",
+    "oauth",
+    "claude",
+    "gemini",
+    "proxy"
+  ]
+}

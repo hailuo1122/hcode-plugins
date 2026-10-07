@@ -1,0 +1,11 @@
+{
+  "name": "agent-tools",
+  "description": "Reusable Agent Skills from agent-tools",
+  "source": {
+    "source": "github",
+    "repo": "kairyou/agent-tools",
+    "ref": "v0.23.1"
+  },
+  "author": "kairyou",
+  "homepage": "https://github.com/kairyou/agent-tools"
+}

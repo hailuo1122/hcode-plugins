@@ -1,0 +1,14 @@
+{
+  "name": "omz",
+  "description": "Oh My ZCode — OmO 编排能力的 ZCode 移植：core（9 子代理 / 5 命令 / 4 skill）+ 可选 graph/orchestration/dashboard profile，默认全关",
+  "source": {
+    "source": "github",
+    "repo": "djt889/OhMyZcode",
+    "ref": "v1.8.1"
+  },
+  "author": {
+    "name": "OMZ",
+    "url": "https://github.com/djt889/OhMyZcode"
+  },
+  "homepage": "https://github.com/djt889/OhMyZcode"
+}

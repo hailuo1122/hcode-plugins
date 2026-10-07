@@ -1,0 +1,10 @@
+{
+  "name": "grill-me",
+  "description": "A ZCode plugin for relentlessly stress-testing plans, decisions, and ideas.",
+  "source": {
+    "source": "github",
+    "repo": "LinnetCodes/grill-me"
+  },
+  "author": "LinnetCodes",
+  "homepage": "https://github.com/LinnetCodes/grill-me"
+}

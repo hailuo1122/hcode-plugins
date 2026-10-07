@@ -1,0 +1,10 @@
+{
+  "name": "prompt-optimizer",
+  "description": "ZCode 提示词优化插件：提供 /optimize 命令和 optimize_prompt MCP 工具，通过 LLM 优化提示词，使其更清晰、更具体、更可执行。",
+  "source": {
+    "source": "github",
+    "repo": "goodie1972/prompt-optimizer"
+  },
+  "author": "goodie1972",
+  "homepage": "https://github.com/goodie1972/prompt-optimizer"
+}

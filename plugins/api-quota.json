@@ -1,0 +1,11 @@
+{
+  "name": "api-quota",
+  "description": "查看当前模型 API 的剩余余额/套餐额度与生成速度：输入框下方状态条、/quota 命令、会话启动自动注入、常驻悬浮窗；数据服务随 ZCode 启停",
+  "source": {
+    "source": "github",
+    "repo": "2877905731/zcode-quota",
+    "ref": "v1.1.1"
+  },
+  "author": "2877905731",
+  "homepage": "https://github.com/2877905731/zcode-quota"
+}

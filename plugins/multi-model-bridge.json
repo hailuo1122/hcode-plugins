@@ -1,0 +1,11 @@
+{
+  "name": "multi-model-bridge",
+  "description": "Multi-model collaboration skill: delegate image/vision understanding (or future capabilities) to an external model when the active model lacks them.",
+  "source": {
+    "source": "github",
+    "repo": "Et3rW/multi-model-bridge",
+    "ref": "v1.0.0"
+  },
+  "author": "Et3rW",
+  "homepage": "https://github.com/Et3rW/multi-model-bridge"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "oh-my-zcode-slim",
+  "description": "Lean multi-agent orchestration suite for ZCode: 9 native subagents (explorer, oracle, librarian, fixer, designer, observer, council and two councillor seats) plus an orchestrator skill. Pure markdown, zero compiled code.",
+  "source": {
+    "source": "github",
+    "repo": "East5RingRoad-kyle/oh-my-zcode-slim"
+  },
+  "author": {
+    "name": "East5RingRoad-kyle",
+    "url": "https://github.com/East5RingRoad-kyle"
+  },
+  "homepage": "https://github.com/East5RingRoad-kyle/oh-my-zcode-slim",
+  "tags": [
+    "zcode",
+    "multi-agent",
+    "orchestration",
+    "subagents",
+    "agents"
+  ]
+}

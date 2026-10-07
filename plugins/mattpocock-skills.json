@@ -1,0 +1,20 @@
+{
+  "name": "mattpocock-skills",
+  "description": "Matt Pocock's agent skills for real engineering — grilling, spec/ticket flows, TDD, code review, domain modelling and more. ZCode-compatible flat layout.",
+  "source": {
+    "source": "github",
+    "repo": "LonExplorer-coder/mattpocock-skills-zcode"
+  },
+  "author": {
+    "name": "Matt Pocock",
+    "url": "https://www.aihero.dev"
+  },
+  "homepage": "https://github.com/LonExplorer-coder/mattpocock-skills-zcode",
+  "tags": [
+    "engineering",
+    "skills",
+    "tdd",
+    "code-review",
+    "grilling"
+  ]
+}

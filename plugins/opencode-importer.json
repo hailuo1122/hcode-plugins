@@ -1,0 +1,10 @@
+{
+  "name": "opencode-importer",
+  "description": "Import OpenCode sessions into ZCode so they appear in the task list and session history.",
+  "source": {
+    "source": "github",
+    "repo": "thanhndv212/zcode-opencode-importer"
+  },
+  "author": "Z.ai",
+  "homepage": "https://github.com/thanhndv212/zcode-opencode-importer"
+}

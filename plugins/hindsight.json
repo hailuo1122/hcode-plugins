@@ -1,0 +1,10 @@
+{
+  "name": "hindsight",
+  "description": "Durable time-aware memory for ZCode via Hindsight. Exposes hindsight_search (recall), hindsight_context (reflect), and hindsight_retain tools that reuse the SAME hindsight banks as the pi agent. Shares ~/.hindsight/config.json and resolves identical bank IDs.",
+  "source": {
+    "source": "github",
+    "repo": "buihongduc132/hindsight-zcode-local"
+  },
+  "author": "bhd",
+  "homepage": "https://github.com/buihongduc132/hindsight-zcode-local"
+}

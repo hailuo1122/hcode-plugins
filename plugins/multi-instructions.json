@@ -1,0 +1,11 @@
+{
+  "name": "multi-instructions",
+  "description": "Load additional instruction files into the session context at startup, so you can split rules across many files instead of one AGENTS.md.",
+  "source": {
+    "source": "github",
+    "repo": "abevol/zcode-multi-instructions",
+    "ref": "v1.0.0"
+  },
+  "author": "abevol",
+  "homepage": "https://github.com/abevol/zcode-multi-instructions"
+}

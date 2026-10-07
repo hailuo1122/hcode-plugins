@@ -1,0 +1,11 @@
+{
+  "name": "zcode-skins",
+  "description": "ZCode 皮肤美化与主题工坊插件：提供精美主题画廊、自定义壁纸、Steam Wallpaper Engine 动态壁纸深度集成与玻璃拟态毛玻璃视觉增强。",
+  "source": {
+    "source": "github",
+    "repo": "CaptainMusX/zcode-skins",
+    "ref": "v1.1.2"
+  },
+  "author": "CaptainMusX",
+  "homepage": "https://github.com/CaptainMusX/zcode-skins"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "zcode-wakatime",
+  "description": "Track ZCode usage time in WakaTime: sends heartbeats on UserPromptSubmit and PostToolUse via wakatime-cli, attributed to the current working directory's project.",
+  "source": {
+    "source": "github",
+    "repo": "COSMICAL-CONTAINER/zcode-wakatime"
+  },
+  "author": {
+    "name": "COSMICAL-CONTAINER",
+    "url": "https://github.com/COSMICAL-CONTAINER"
+  },
+  "homepage": "https://github.com/COSMICAL-CONTAINER/zcode-wakatime",
+  "tags": [
+    "wakatime",
+    "time-tracking",
+    "hooks",
+    "zcode",
+    "glm"
+  ]
+}

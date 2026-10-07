@@ -1,0 +1,17 @@
+{
+  "name": "web-3d-stack",
+  "description": "现代 Web 3D/图形前端全家桶单技能：Three.js 基础+游戏、WebGPU/TSL、shadcn/ui，统一路由入口，22 份上游文档为内部参考。",
+  "source": {
+    "source": "github",
+    "repo": "r-y-ren/web-3d-stack"
+  },
+  "author": "r-y-ren",
+  "homepage": "https://github.com/r-y-ren/web-3d-stack",
+  "tags": [
+    "threejs",
+    "webgpu",
+    "tsl",
+    "shadcn",
+    "game"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "zcode-plugin-langfuse",
+  "description": "Fail-open Langfuse tracing for ZCode sessions, prompts, tool calls, and assistant responses.",
+  "source": {
+    "source": "github",
+    "repo": "erlinerd/zcode-plugin-langfuse",
+    "ref": "v0.3.0"
+  },
+  "author": "Community contributor",
+  "homepage": "https://github.com/erlinerd/zcode-plugin-langfuse",
+  "tags": [
+    "langfuse",
+    "observability",
+    "tracing",
+    "telemetry",
+    "hooks"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "pi-commands",
+  "description": "All pi (pi-coding-agent) prompt-templates imported as ZCode slash-commands. Content verbatim. ZCode derives the command name from the filename, so the 'name:' frontmatter key (when present) is redundant but harmless — ZCode ignores it. v0.2.0 adds a UserPromptSubmit hook that re-injects the command index on every prompt, fixing the runtime disappearance bug where long sessions drop the command listing via tail-window truncation.",
+  "source": {
+    "source": "github",
+    "repo": "buihongduc132/zcode-pi-cmd-loader"
+  },
+  "author": "bhd",
+  "homepage": "https://github.com/buihongduc132/zcode-pi-cmd-loader"
+}

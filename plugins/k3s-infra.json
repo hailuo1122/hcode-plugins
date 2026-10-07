@@ -1,0 +1,17 @@
+{
+  "name": "k3s-infra",
+  "description": "k3s-infra operating knowledge for ZCode: GitOps workflow, verify-before-claiming, incident triage, Ansible day-0 hardening, the read-only cluster MCP server, reusable slash commands (health, triage, validate, sync-skills), and a guard hook that blocks cluster write commands.",
+  "source": {
+    "source": "github",
+    "repo": "cploutarchou/k3s-infra"
+  },
+  "author": "Christos Ploutarchou",
+  "homepage": "https://github.com/cploutarchou/k3s-infra",
+  "tags": [
+    "k3s",
+    "kubernetes",
+    "flux",
+    "gitops",
+    "cnpg"
+  ]
+}

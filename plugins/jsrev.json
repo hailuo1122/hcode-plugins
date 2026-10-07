@@ -1,0 +1,17 @@
+{
+  "name": "jsrev",
+  "description": "JS reverse engineering toolkit for coding agents: dual-engine browser MCP (Chromium debugger + Camoufox instrumentation), progressive-disclosure skill, and an evidence-workspace delivery contract. For authorized targets only; the user is responsible for ensuring authorization.",
+  "source": {
+    "source": "github",
+    "repo": "tomlismith007/jsrev"
+  },
+  "author": "jsrev",
+  "homepage": "https://github.com/tomlismith007/jsrev",
+  "tags": [
+    "js-reverse",
+    "mcp",
+    "anti-bot",
+    "jsvmp",
+    "captcha"
+  ]
+}

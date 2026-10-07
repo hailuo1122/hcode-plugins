@@ -1,0 +1,10 @@
+{
+  "name": "fun-code",
+  "description": "Joke troll mode: the agent works like an overconfident clumsy idiot, plants silly mistakes in the easiest places, and stays annoying until told to stop.",
+  "source": {
+    "source": "github",
+    "repo": "temmeik/fun-code"
+  },
+  "author": "Yeban",
+  "homepage": "https://github.com/temmeik/fun-code"
+}

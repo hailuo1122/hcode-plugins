@@ -1,0 +1,18 @@
+{
+  "name": "morning-star-harness",
+  "description": "Morning Star — Agent Plugin for harness engineering workflows: a TS Harness Workflow Engine (@mstar-harness/engine) that enforces deterministic workflow gates, plus mstar-* judgment skills for multi-agent code delivery across OpenCode, Cursor, Codex, Kimi Code, ZCode, and omp.",
+  "source": {
+    "source": "github",
+    "repo": "btspoony/mstar-harness",
+    "ref": "v3.11.2"
+  },
+  "author": "Bohao Tang",
+  "homepage": "https://github.com/btspoony/mstar-harness",
+  "tags": [
+    "morning-star",
+    "mstar",
+    "harness",
+    "agent",
+    "multi-agent"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "taskforge",
+  "description": "BuilderOS-shaped ideate-to-launch pipeline with Task Master as the dependency-aware execution backbone. Adds /taskforge-init, /taskforge-sync (backup → isolated re-parse → deterministic diff → human-gated additive import) and /taskforge-roadmap.",
+  "source": {
+    "source": "github",
+    "repo": "mrlfarano/taskforge"
+  },
+  "author": "TaskForge",
+  "homepage": "https://github.com/mrlfarano/taskforge"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "easyslides",
+  "description": "Create editable research presentations, reuse native and image-reference templates, or rebuild approved images as whole slides or selected regions. New image generation requires a supported host; approved images can be supplied directly.",
+  "source": {
+    "source": "github",
+    "repo": "Rimagination/easyslides",
+    "ref": "v1.2.0"
+  },
+  "author": "EasySlides contributors",
+  "homepage": "https://github.com/Rimagination/easyslides",
+  "tags": [
+    "PowerPoint",
+    "PPTX",
+    "academic presentations",
+    "research presentations",
+    "editable slides"
+  ]
+}

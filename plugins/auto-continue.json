@@ -1,0 +1,10 @@
+{
+  "name": "auto-continue",
+  "description": "自动继续插件:开启后当对话结束(包括正常结束与出错停止)时自动让 agent 继续;支持设置生效时长与自定义继续消息文本;agent 可调用工具让本轮结束后不触发;/auto-continue 命令直连执行,不消耗模型调用。",
+  "source": {
+    "source": "github",
+    "repo": "chr431/zcode-plugin-auto-continue"
+  },
+  "author": "Eric",
+  "homepage": "https://github.com/chr431/zcode-plugin-auto-continue"
+}

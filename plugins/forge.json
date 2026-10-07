@@ -1,0 +1,20 @@
+{
+  "name": "forge",
+  "description": "Unified AI coding workflow framework — /forge single entry, 38 subcommands, TDD, spec-driven, automated review. Claude Code + Zcode dual-platform, GLM-5.2 Long Horizon optimized.",
+  "source": {
+    "source": "github",
+    "repo": "kkkman22/Forge"
+  },
+  "author": {
+    "name": "Forge contributors",
+    "url": "https://github.com/kkkman22/Forge"
+  },
+  "homepage": "https://github.com/kkkman22/Forge",
+  "tags": [
+    "workflow",
+    "tdd",
+    "spec-driven",
+    "code-review",
+    "ci"
+  ]
+}
