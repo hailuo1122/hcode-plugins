@@ -1,0 +1,20 @@
+{
+  "name": "open-dynamic-workflows",
+  "description": "ODW for Cursor, Grok Bot (via Cursor CLI), Grok Build, ZCode, Antigravity and Copilot, with safe worktree isolation. Claude and Codex hosts use native ultracode/ultra instead.",
+  "source": {
+    "source": "github",
+    "repo": "atebites-hub/open-dynamic-workflows-plugin"
+  },
+  "author": {
+    "name": "Open Dynamic Workflows",
+    "url": "https://github.com/atebites-hub/open-dynamic-workflows-plugin"
+  },
+  "homepage": "https://github.com/atebites-hub/open-dynamic-workflows-plugin",
+  "tags": [
+    "workflow",
+    "orchestration",
+    "subagent",
+    "fan-out",
+    "parallel"
+  ]
+}

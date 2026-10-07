@@ -1,0 +1,10 @@
+{
+  "name": "novelist",
+  "description": "网文写作工具集：/story-setup 一键部署完整写作环境（AGENTS.md + Hooks + Skills + Commands + Rules）到项目目录。零全局污染。基于 oh-story-claudecode 精简适配 ZCode。",
+  "source": {
+    "source": "github",
+    "repo": "GlotTale/novelist"
+  },
+  "author": "Shen Yanshu",
+  "homepage": "https://github.com/GlotTale/novelist"
+}

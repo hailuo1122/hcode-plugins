@@ -1,0 +1,10 @@
+{
+  "name": "zcode-tokenspeed",
+  "description": "ZCode 桌面客户端本地补丁注入工具：思考档位配置、用量页去截断、模型弹窗加宽、TPS 状态栏、思考强度滑条、增强提示词按钮（右键可选润色所用模型）、设置页模型拉取按钮。装完重启即自动注入（零配置），全部幂等、可检查、可精确还原，并支持在插件详情页逐项开关。",
+  "source": {
+    "source": "github",
+    "repo": "c80361619/zcode-toolkit"
+  },
+  "author": "c80361619",
+  "homepage": "https://github.com/c80361619/zcode-toolkit"
+}

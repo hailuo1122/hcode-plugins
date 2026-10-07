@@ -1,0 +1,17 @@
+{
+  "name": "zen-useragent",
+  "description": "Use OpenCode ZEN free models in ZCode. Runs a loopback proxy that rewrites the outgoing User-Agent to opencode/... so ZEN free models stop returning 429 FreeUsageLimitError, and wires a matching custom provider into ZCode.",
+  "source": {
+    "source": "github",
+    "repo": "dddsx3/zcode-plugin-zen-useragent"
+  },
+  "author": "zcode-zen-useragent",
+  "homepage": "https://github.com/dddsx3/zcode-plugin-zen-useragent",
+  "tags": [
+    "opencode",
+    "zen",
+    "free-models",
+    "proxy",
+    "user-agent"
+  ]
+}

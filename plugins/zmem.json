@@ -1,0 +1,14 @@
+{
+  "name": "zmem",
+  "description": "Multi-tier memory system for ZCode: always-on core memory, cross-session lessons with FTS5 recall, and reflection-on-failure. Local-first, zero cloud dependency.",
+  "source": {
+    "source": "github",
+    "repo": "zaxbysauce/zmem",
+    "ref": "v0.84.0"
+  },
+  "author": {
+    "name": "Brett",
+    "url": "https://github.com/zaxbysauce"
+  },
+  "homepage": "https://github.com/zaxbysauce/zmem"
+}

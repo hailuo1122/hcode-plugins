@@ -1,0 +1,18 @@
+{
+  "name": "terraphim-skills-intro",
+  "description": "Search code, capture learning, and retrieve memory with Terraphim command-line tools.",
+  "source": {
+    "source": "github",
+    "repo": "terraphim/terraphim-cursor-plugin",
+    "ref": "v0.2.3"
+  },
+  "author": "Terraphim AI",
+  "homepage": "https://github.com/terraphim/terraphim-cursor-plugin",
+  "tags": [
+    "terraphim",
+    "code-search",
+    "learning",
+    "memory",
+    "knowledge-graph"
+  ]
+}

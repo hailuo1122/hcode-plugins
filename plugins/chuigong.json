@@ -1,0 +1,17 @@
+{
+  "name": "chuigong",
+  "description": "垂拱而治：君上（主对话）只做拆解、派发、裁决、汇总，调研/写作/编码/数据处理/审核全部由预置百官子智能体（通政·翰林·将作·书吏·御史）执行；含究诘（需求拷问）与 sdd（严肃流程）技能；出厂模型 GLM-5.3-Flash，可经设置→子智能体 UI 更换",
+  "source": {
+    "source": "github",
+    "repo": "rouyiemei/chuigong"
+  },
+  "author": "rouyiemei",
+  "homepage": "https://github.com/rouyiemei/chuigong",
+  "tags": [
+    "zcode-plugin",
+    "multi-agent",
+    "delegation",
+    "subagents",
+    "orchestration"
+  ]
+}

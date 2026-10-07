@@ -1,0 +1,11 @@
+{
+  "name": "dragon-agents",
+  "description": "Read-only research subagents for repo, markets, and machine work: repo maps, doc-drift and release audits, cascade and spec checks, CI triage and posture, workspace sweeps, code review, git archaeology, claim verification, dependency and test-gap audits, debt census, duplication scouting, slop reads, equity and ETF research briefs from keyless public market data, personal finance and library briefs, dataset profiling, security review, machine and backup health census, and charter design for new ",
+  "source": {
+    "source": "github",
+    "repo": "VirInvictus/dragon-agents",
+    "ref": "v0.6.0"
+  },
+  "author": "Brandon (bdkl)",
+  "homepage": "https://github.com/VirInvictus/dragon-agents"
+}

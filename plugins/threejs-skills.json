@@ -1,0 +1,15 @@
+{
+  "name": "threejs-skills",
+  "description": "Three.js 基础知识技能集：基础/几何/材质/纹理/光照/动画/着色器/后期/加载/交互十技能。上游 MIT（cloudai-x）。",
+  "source": {
+    "source": "github",
+    "repo": "r-y-ren/threejs-skills"
+  },
+  "author": "r-y-ren",
+  "homepage": "https://github.com/r-y-ren/threejs-skills",
+  "tags": [
+    "threejs",
+    "webgl",
+    "skills"
+  ]
+}

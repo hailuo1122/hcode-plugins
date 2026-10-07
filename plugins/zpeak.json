@@ -1,0 +1,10 @@
+{
+  "name": "zpeak",
+  "description": "Offline peak-hour usage guard: warns when the clock (UTC) is inside user-configured provider peak windows (e.g. ZAI GLM 06:00-10:00), banners on session start, and asks for confirmation on the first prompt of a session during peak hours. Clock only, no network.",
+  "source": {
+    "source": "github",
+    "repo": "amurru/zpeak"
+  },
+  "author": "amurru",
+  "homepage": "https://github.com/amurru/zpeak"
+}

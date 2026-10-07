@@ -1,0 +1,20 @@
+{
+  "name": "let-it-flow",
+  "description": "Process skills that scale to task weight. Judgment-first workflows for coding agents: brainstorming, TDD, debugging, spec & plan writing — without the heavyweight enforcement.",
+  "source": {
+    "source": "github",
+    "repo": "Lettucech/let-it-flow"
+  },
+  "author": {
+    "name": "Lettucech",
+    "url": "https://github.com/Lettucech"
+  },
+  "homepage": "https://github.com/Lettucech/let-it-flow",
+  "tags": [
+    "skills",
+    "workflow",
+    "tdd",
+    "debugging",
+    "planning"
+  ]
+}

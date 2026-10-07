@@ -1,0 +1,20 @@
+{
+  "name": "glm-hammer",
+  "description": "Forge-and-hammer engineering harness: storyline-driven design tokens verified by a designer panel (crucible), recon-first strong planning verified by a 3-critic panel, and a worker-validator-critic implementation loop with security/QA review gates enforced by hooks.",
+  "source": {
+    "source": "github",
+    "repo": "tmdgusya/glm-hammer"
+  },
+  "author": {
+    "name": "tmdgusya",
+    "url": "https://github.com/tmdgusya"
+  },
+  "homepage": "https://github.com/tmdgusya/glm-hammer",
+  "tags": [
+    "planning",
+    "critic",
+    "worker-validator",
+    "hooks",
+    "engineering-discipline"
+  ]
+}

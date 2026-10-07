@@ -1,0 +1,17 @@
+{
+  "name": "pstack",
+  "description": "ZCode port of poteto's pstack: rigorous agent workflows, principles, playbooks and subagents you can parallelize with confidence. Write less, higher quality code.",
+  "source": {
+    "source": "github",
+    "repo": "Luks3110/pstack-zcode"
+  },
+  "author": "Lauren Tan (poteto); ZCode port by Luks3110",
+  "homepage": "https://github.com/Luks3110/pstack-zcode",
+  "tags": [
+    "pstack",
+    "poteto-mode",
+    "workflow",
+    "principles",
+    "agent-style"
+  ]
+}

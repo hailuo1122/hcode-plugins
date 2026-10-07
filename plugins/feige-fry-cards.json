@@ -1,0 +1,17 @@
+{
+  "name": "feige-fry-cards",
+  "description": "🕊️ 飞鸽卡片：agent 无关的结果汇报插件。ZCode 会话收尾时自动生成摘要战报卡（标题 + ≤300 字摘要 + 模型/💭/🔧/上下文/⏱️ 统计脚注），经 webhook 或 CardKit 直发飞书群。内置 Stop hook（默认关）、feige send CLI 与 feige 技能。",
+  "source": {
+    "source": "github",
+    "repo": "techysy/feige-fry-cards"
+  },
+  "author": "techysy",
+  "homepage": "https://github.com/techysy/feige-fry-cards",
+  "tags": [
+    "feishu",
+    "lark",
+    "card",
+    "notification",
+    "report"
+  ]
+}

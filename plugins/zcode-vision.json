@@ -1,0 +1,10 @@
+{
+  "name": "zcode-vision",
+  "description": "Automatic image recognition for text-only models in ZCode (LongCat, DeepSeek, etc.) — 为纯文本模型提供自动识图能力",
+  "source": {
+    "source": "github",
+    "repo": "5uyuz/zcode-vision-plugin"
+  },
+  "author": "zcode-vision contributors",
+  "homepage": "https://github.com/5uyuz/zcode-vision-plugin"
+}

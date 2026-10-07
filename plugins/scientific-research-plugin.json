@@ -1,0 +1,21 @@
+{
+  "name": "scientific-research-plugin",
+  "description": "A full-lifecycle research pipeline for OR & ML, 13 skills + 2 subagents take a project from prior-art survey to the conference talk and poster — Zotero literature intake, structured reading notes, note-driven PDF category highlighting, publication-grade figures, top-journal-style section drafting, LaTeX polishing, noun-term jargon auditing, citation verification against official APIs, three-blind adversarial review, and point-by-point rebuttal. Its prior-art survey covers research-grade question",
+  "source": {
+    "source": "github",
+    "repo": "pengkangzhen/scientific-research-plugin",
+    "ref": "v0.11.0"
+  },
+  "author": {
+    "name": "pengkangzhen",
+    "url": "https://github.com/pengkangzhen"
+  },
+  "homepage": "https://github.com/pengkangzhen/scientific-research-plugin",
+  "tags": [
+    "academic",
+    "research",
+    "zotero",
+    "latex",
+    "peer-review"
+  ]
+}

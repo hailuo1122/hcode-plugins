@@ -1,0 +1,10 @@
+{
+  "name": "en-prompt",
+  "description": "Translates non-English user prompts to English before they reach the LLM, for token optimization and better results. Uses a UserPromptSubmit hook with a pluggable translation engine (local Ollama by default). Runs entirely via a Python 3 stdlib script — no pip dependencies. When the active language is on the configured allowlist and is not English, the hook calls the configured engine; on engine failure it blocks the prompt with a clear reason, and undetectable/code-heavy prompts pass through un",
+  "source": {
+    "source": "github",
+    "repo": "ricardopera/en-prompt"
+  },
+  "author": "ricardopera",
+  "homepage": "https://github.com/ricardopera/en-prompt"
+}

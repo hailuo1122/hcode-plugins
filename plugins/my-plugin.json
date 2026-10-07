@@ -1,0 +1,15 @@
+{
+  "name": "my-plugin",
+  "description": "八个技能：toolbox（工具路由向导）、mineru（22 类文档转 Markdown）、duckdb（CSV/Parquet/JSON 大表 SQL 聚合）、trafilatura（静态网页正文降噪）、ast-grep（AST 结构化代码检索与批量改写）、bwrap-run（bubblewrap 沙箱执行不可信代码）、remote-compute（性能本远程算力，链路自愈）、web-3d-stack（Web 3D/图形前端全家桶单技能路由：Three.js 基础+游戏、WebGPU/TSL、shadcn/ui，四上游 22 份文档收为内部参考）。 可迁移：技能只写流程，机器状态分两层托管（约定路径由 scripts/bootstrap.sh 重建 + 机器档案 ~/.config/my-plugin/machine.env），换机流程见 docs/MIGRATION.md。",
+  "source": {
+    "source": "github",
+    "repo": "r-y-ren/my-plugin"
+  },
+  "author": "r-y-ren",
+  "homepage": "https://github.com/r-y-ren/my-plugin",
+  "tags": [
+    "skills",
+    "toolbox",
+    "local-tools"
+  ]
+}

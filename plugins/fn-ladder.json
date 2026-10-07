@@ -1,0 +1,17 @@
+{
+  "name": "fn-ladder",
+  "description": "函数阶梯：以函数为颗粒度的开发流技能套件——需求打磨、函数划分、骨架、分批实现、收尾核验五阶段 + 存量重构/多项目合并两个入口，用机器可验证的判据防 AI 假完成。",
+  "source": {
+    "source": "github",
+    "repo": "r-y-ren/fn-ladder",
+    "ref": "v2.1.0"
+  },
+  "author": "r-y-ren",
+  "homepage": "https://github.com/r-y-ren/fn-ladder",
+  "tags": [
+    "skills",
+    "workflow",
+    "anti-fake-completion",
+    "function-ladder"
+  ]
+}

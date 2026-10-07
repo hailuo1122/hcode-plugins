@@ -1,0 +1,20 @@
+{
+  "name": "nowledge-mem-zcode",
+  "description": "Native Nowledge Mem connector for ZCode with MCP, Skills, commands, and lifecycle hooks.",
+  "source": {
+    "source": "github",
+    "repo": "nowledge-co/zcode-plugin"
+  },
+  "author": {
+    "name": "Nowledge Labs",
+    "url": "https://nowledge-labs.ai"
+  },
+  "homepage": "https://github.com/nowledge-co/zcode-plugin",
+  "tags": [
+    "zcode",
+    "memory",
+    "mcp",
+    "hooks",
+    "commands"
+  ]
+}

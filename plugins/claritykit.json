@@ -1,0 +1,20 @@
+{
+  "name": "claritykit",
+  "description": "Turn vague design into reviewable artifacts — direction, requirements, architecture candidates, behavior models, data contracts, UI prototypes — with tool-derived paths, an optional explicitly-activated design flow, and a managed preview site.",
+  "source": {
+    "source": "github",
+    "repo": "maxi3777/claritykit"
+  },
+  "author": {
+    "name": "maxi3777",
+    "url": "https://github.com/maxi3777"
+  },
+  "homepage": "https://github.com/maxi3777/claritykit",
+  "tags": [
+    "specification",
+    "clarification",
+    "agent-skills",
+    "design-flow",
+    "mermaid"
+  ]
+}

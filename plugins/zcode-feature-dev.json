@@ -1,0 +1,17 @@
+{
+  "name": "zcode-feature-dev",
+  "description": "Guided feature development workflow with specialized agents for codebase exploration, architecture design, and quality review. ZCode-native port of the feature-dev plugin.",
+  "source": {
+    "source": "github",
+    "repo": "DeepCoach/zcode-feature-dev"
+  },
+  "author": "DeepSleep",
+  "homepage": "https://github.com/DeepCoach/zcode-feature-dev",
+  "tags": [
+    "feature-development",
+    "workflow",
+    "code-explorer",
+    "code-architect",
+    "code-reviewer"
+  ]
+}

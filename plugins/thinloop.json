@@ -1,0 +1,17 @@
+{
+  "name": "thinloop",
+  "description": "Simplify complex development with Issue-backed discovery, risk-adaptive Web experience and architecture design, non-executing multi-Issue project decomposition into dependency DAGs, bounded READY-wave execution, read-only project-status navigation, project-scale refactoring and cross-stack reimplementation, autonomous single-Issue PR delivery, evidence-backed maintenance, concise experiential knowledge, and human-approved skill evolution.",
+  "source": {
+    "source": "github",
+    "repo": "mindcarver/thinloop"
+  },
+  "author": "mindcarver",
+  "homepage": "https://github.com/mindcarver/thinloop",
+  "tags": [
+    "coding-agent",
+    "product-discovery",
+    "user-experience",
+    "ui-design",
+    "software-architecture"
+  ]
+}

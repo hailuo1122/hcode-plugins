@@ -1,0 +1,21 @@
+{
+  "name": "senmu-buildos",
+  "description": "Project governance and engineering coaching for AI coding agents: align requirements and interface design, reuse frameworks and components, improve code quality, and deliver with evidence.",
+  "source": {
+    "source": "github",
+    "repo": "SenMuShare/senmu-buildos",
+    "ref": "v2.24.1"
+  },
+  "author": {
+    "name": "Senmu",
+    "url": "https://github.com/SenMuShare"
+  },
+  "homepage": "https://github.com/SenMuShare/senmu-buildos",
+  "tags": [
+    "zcode",
+    "zcode-plugin",
+    "agent-skills",
+    "ai-agents",
+    "project-management"
+  ]
+}
