@@ -1,0 +1,13 @@
+{
+  "name": "engram",
+  "description": "Evidence-based learning engine: first-principles curricula, generation-first Socratic tutoring, free-recall verification with receipts, FSRS-scheduled memory, and interactive explorable artifacts. Learn anything; keep it.",
+  "source": {
+    "source": "github",
+    "repo": "nagisanzenin/engram",
+    "ref": "v1.15.1"
+  },
+  "author": { "name": "Quan Duong", "url": "https://github.com/nagisanzenin" },
+  "homepage": "https://github.com/nagisanzenin/engram",
+  "category": "productivity",
+  "tags": ["learning", "memory", "productivity"]
+}
