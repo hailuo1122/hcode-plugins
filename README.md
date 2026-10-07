@@ -99,6 +99,16 @@ hailuo1122/hcode-plugins
 共 76 个插件。（星标与最近更新由索引 CI 每日刷新）
 <!-- plugins:end -->
 
+## 做自己的插件，分享给别人
+
+不会写代码也没关系：在 HCode 里对 AI 说「帮我做一个插件」就能生成骨架，本地试好之后——
+
+- **分享给朋友（无需审核）**：让他在「设置 → 插件市场 → 添加市场」里填 `你的账号/仓库名` 即可安装
+- **让所有用户发现**：给本仓库提 PR 收录条目（或给插件仓库打 topic `hcode-plugin` 等自动发现）
+
+从零到分享的完整流程（做出插件 → 本地试用 → 上传 GitHub → 两种分享方式 → 发新版本）见
+**[docs/create-and-share.md](docs/create-and-share.md)**。
+
 ## 投稿插件
 
 1. Fork 本仓库
@@ -106,15 +116,17 @@ hailuo1122/hcode-plugins
 3. 提 PR —— CI 自动校验：仓库可达、版本钉可达、`.zcode-plugin/plugin.json` 名称一致
 4. CI 通过并合并后，你的插件自动出现在上表，以及所有已订阅客户端里
 
-字段说明、版本钉建议和常见报错对照见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+也可以只给插件仓库打上 GitHub topic **`hcode-plugin`**：每日发现任务会自动扫描并开候选 PR。
 
-还没有插件？在 HCode 里启用 `plugin-creator` 插件，可以直接让它帮你生成插件脚手架。
+字段说明、版本钉建议和常见报错对照见 [CONTRIBUTING.md](CONTRIBUTING.md)；
+还没有插件？在 HCode 里对 AI 说「帮我做一个插件」，`plugin-creator` 会直接生成骨架。
 
 ## 维护者备忘
 
 - `marketplace.json` 与上面的表格由 CI 从 `plugins/*.json` 自动生成，**不要手改**
 - 置顶插件：编辑 `marketplace.meta.json` 的 `featured` 数组
-- 本地手动重建：`node scripts/build-marketplace.mjs`；本地校验：`node scripts/validate-entry.mjs`
+- 本地手动重建：`node scripts/build-marketplace.mjs`（带 `MARKETPLACE_ENRICH=1` + `GITHUB_TOKEN` 刷新星标列）；本地校验：`node scripts/validate-entry.mjs`
+- 仓库自动化：每日发现候选开 PR、每周一体检开 issue、星标/最近更新每日刷新——细节见 [CONTRIBUTING.md](CONTRIBUTING.md) 的「仓库自动化」
 
 ## 免责声明
 

@@ -4,6 +4,9 @@
 
 还没有插件？在 HCode 里启用 `plugin-creator` 插件，让它帮你生成脚手架，然后再回来投稿。
 
+第一次做插件、想了解「怎么做 + 怎么分享给别人」的完整路径（含不经过索引的轻量分享方式）：
+见 [docs/create-and-share.md](docs/create-and-share.md)。
+
 ## 三步投稿
 
 1. Fork 本仓库
