@@ -1,0 +1,6 @@
+{
+  "name": "engram",
+  "description": "临时 PR 测试条目",
+  "source": { "source": "github", "repo": "nagisanzenin/engram" },
+  "smokeTypo": true
+}
