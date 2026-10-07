@@ -7,6 +7,8 @@ on:
       - "plugins/**"
       - "marketplace.meta.json"
       - "scripts/build-marketplace.mjs"
+  schedule:
+    - cron: "17 4 * * *" # 每天 04:17 UTC：刷新 README 里的星标/最近更新
   workflow_dispatch:
 
 permissions:
@@ -25,6 +27,9 @@ jobs:
         with:
           node-version: 22
       - name: Rebuild marketplace.json and README table
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          MARKETPLACE_ENRICH: "1"
         run: node scripts/build-marketplace.mjs
       - name: Commit generated files if changed
         run: |

@@ -10,6 +10,9 @@
 2. 复制 `templates/plugin-entry.json` 到 `plugins/<你的插件名>.json`，按下面字段说明填写
 3. 提 PR —— CI 会自动校验，通过并合并后插件即刻出现在 README 表格和所有已订阅客户端里
 
+懒得提 PR？给插件仓库打上 GitHub topic **`hcode-plugin`** 或保证仓库里有 `.zcode-plugin/plugin.json`，
+每日发现任务会自动扫描并为新插件开候选 PR（仍需维护者过目合并）。
+
 本地建议先跑一遍校验：
 
 ```sh
@@ -80,4 +83,14 @@ monorepo：用 `source.path` 指向插件所在子目录（如 `"path": "plugins
 
 - 合并后 `build-index` 工作流自动重建 `marketplace.json` 和 README 表格；**不要手改 `marketplace.json`**
 - 置顶插件：编辑 `marketplace.meta.json` 的 `featured` 数组（填插件 `name`）
-- 手动重建：`node scripts/build-marketplace.mjs`
+- 手动重建：`node scripts/build-marketplace.mjs`（带 `MARKETPLACE_ENRICH=1` + `GITHUB_TOKEN` 可刷新星标列）
+
+## 仓库自动化
+
+| 任务 | 频率 | 做什么 |
+| --- | --- | --- |
+| Discover（`discover.yml`） | 每日 02:23 UTC | 扫 topic `hcode-plugin` + 代码搜索 `.zcode-plugin/plugin.json`，为新插件开候选 PR（校验不过则整批不提交，不会产出坏 PR） |
+| Health（`health.yml`） | 每周一 03:41 UTC | 全量在线校验所有条目（仓库/版本钉可达、名称一致），失败时开或更新 `[health]` issue |
+| Build index（`build-index.yml`） | 每次合并 + 每日 04:17 UTC | 重建 `marketplace.json` 与 README 表格，刷新星标/最近更新列 |
+
+bot 开出的 PR 与 issue 都需要维护者过目；bot 不自动合并任何东西。

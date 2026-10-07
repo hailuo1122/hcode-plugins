@@ -1,0 +1,53 @@
+name: Discover community plugins
+
+on:
+  schedule:
+    - cron: "23 2 * * *" # 每天 02:23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Discover candidate entries
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/discover-candidates.mjs
+      - name: Validate all entries (blocks submission on any failure)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/validate-entry.mjs
+      - name: Open pull request (or issue fallback)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain plugins)" ]; then
+            echo "没有新候选，结束。"
+            exit 0
+          fi
+          BRANCH="bot/discovery-$(date -u +%Y%m%d)"
+          git config user.name "hcode-community-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add plugins
+          git commit -m "bot: discover new community plugins"
+          git push origin "$BRANCH"
+          SUMMARY="$(git show --stat --format= HEAD | head -40)"
+          BODY="自动发现的候选条目（已通过 entry 校验，装前不背书）。请逐条过目：条目指向的仓库与描述是否正确，然后再合并。
+
+          \`\`\`
+          $SUMMARY
+          \`\`\`
+
+          来源说明：topic \`hcode-plugin\` + 代码搜索 \`.zcode-plugin/plugin.json\`。"
+          gh pr create --title "bot: 发现新的社区插件候选" --body "$BODY" \
+            || gh issue create --title "候选插件待收录（$(date -u +%Y-%m-%d)）" --body "$BODY"

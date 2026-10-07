@@ -53,6 +53,48 @@ const manifest = {
 };
 writeFileSync(join(rootDir, "marketplace.json"), `${JSON.stringify(manifest, null, 2)}\n`);
 
+// 信任信号（可选增强）：CI 带 MARKETPLACE_ENRICH=1 时抓 star 与最近 push 时间写进 README。
+// 尽力而为——单个仓库失败记 null，绝不让构建失败；本地不带该环境变量时保持离线确定性。
+const enrich = process.env.MARKETPLACE_ENRICH === "1";
+const trustByRepo = new Map();
+if (enrich) {
+  const token = process.env.GITHUB_TOKEN?.trim();
+  for (const entry of plugins) {
+    const source = entry.source ?? {};
+    if (source.source !== "github" || typeof source.repo !== "string") continue;
+    try {
+      const response = await fetch(`https://api.github.com/repos/${source.repo}`, {
+        headers: {
+          accept: "application/vnd.github+json",
+          "user-agent": "hcode-community-index",
+          ...(token ? { authorization: `Bearer ${token}` } : {}),
+        },
+      });
+      if (!response.ok) throw new Error(String(response.status));
+      const repo = await response.json();
+      trustByRepo.set(source.repo, {
+        stars: typeof repo.stargazers_count === "number" ? repo.stargazers_count : null,
+        pushedAt: typeof repo.pushed_at === "string" ? repo.pushed_at.slice(0, 10) : null,
+        archived: repo.archived === true,
+      });
+    } catch {
+      trustByRepo.set(source.repo, null);
+    }
+  }
+}
+
+function trustCells(entry) {
+  const source = entry.source ?? {};
+  if (source.source !== "github") return { stars: "—", pushedAt: "—" };
+  const trust = trustByRepo.get(source.repo);
+  if (!trust) return { stars: "—", pushedAt: "—" };
+  if (trust.archived) return { stars: "⚠", pushedAt: "已归档" };
+  return {
+    stars: trust.stars === null ? "—" : `⭐ ${trust.stars}`,
+    pushedAt: trust.pushedAt ?? "—",
+  };
+}
+
 const escapeCell = (value) =>
   String(value).replace(/\|/g, "\\|").replace(/\r?\n/g, " ").trim();
 const escapeLink = (value) => String(value).replace(/\(/g, "%28").replace(/\)/g, "%29");
@@ -77,14 +119,16 @@ const table =
   plugins.length === 0
     ? "_暂无插件 —— 欢迎成为第一个投稿者。_"
     : [
-        "| 插件 | 说明 | 来源 | 版本钉 | 标签 |",
-        "| --- | --- | --- | --- | --- |",
+        "| 插件 | 说明 | 来源 | 版本钉 | 星标 | 最近更新 | 标签 |",
+        "| --- | --- | --- | --- | --- | --- | --- |",
         ...plugins.map((entry) => {
           const star = featured.includes(entry.name) ? "⭐ " : "";
-          return `| ${star}\`${entry.name}\` | ${escapeCell(entry.description ?? "")} | ${sourceCell(entry)} | ${pinCell(entry)} | ${escapeCell((entry.tags ?? []).join(", ")) || "—"} |`;
+          const trust = trustCells(entry);
+          return `| ${star}\`${entry.name}\` | ${escapeCell(entry.description ?? "")} | ${sourceCell(entry)} | ${pinCell(entry)} | ${trust.stars} | ${trust.pushedAt} | ${escapeCell((entry.tags ?? []).join(", ")) || "—"} |`;
         }),
         "",
-        `共 ${plugins.length} 个插件。`,
+        `共 ${plugins.length} 个插件。` +
+          (enrich ? "（星标与最近更新由每日构建任务自动刷新）" : ""),
       ].join("\n");
 
 const readmePath = join(rootDir, "README.md");

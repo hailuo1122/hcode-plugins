@@ -1,0 +1,48 @@
+name: Index health check
+
+on:
+  schedule:
+    - cron: "41 3 * * 1" # 每周一 03:41 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Validate all entries online
+        id: validate
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/validate-entry.mjs 2>&1 | tee /tmp/health.log
+      - name: Report failures as an issue
+        if: steps.validate.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="[health] 索引体检发现问题"
+          EXISTING=$(gh issue list --state open --json number,title \
+            -q '.[] | select(.title | startswith("[health]")) | .number' | head -1)
+          DETAIL="$(tail -40 /tmp/health.log)"
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "体检再次发现问题（$(date -u +%Y-%m-%d)）：
+
+          \`\`\`
+          $DETAIL
+          \`\`\`"
+          else
+            gh issue create --title "$TITLE" --body "条目在线校验失败（仓库/版本钉不可达、manifest 名称不一致等），请修复或下架：
+
+          \`\`\`
+          $DETAIL
+          \`\`\`"
+          fi
