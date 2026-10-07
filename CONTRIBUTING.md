@@ -31,7 +31,7 @@ node scripts/validate-entry.mjs --offline   # 只查字段格式，不联网
 | `description` | ✅ | 一句话说明 |
 | `source` | ✅ | 安装来源，见下表 |
 | `author` |  | 作者名（字符串）或 `{ "name": "...", "url": "..." }` |
-| `homepage` / `icon` |  | 主页 / 图标 URL |
+| `homepage` / `icon` |  | 主页 / 图标 URL。图标不填也行：构建时优先用仓库 `.zcode-plugin/icon.png`（或 svg/webp），没有再回退到 GitHub 头像 |
 | `category` / `tags` |  | 分类 / 标签数组 |
 | `displayName` |  | 商店里展示的更友好名字 |
 | `examplePrompts` |  | 示例提示词数组 |
