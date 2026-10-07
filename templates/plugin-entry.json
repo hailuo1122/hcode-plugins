@@ -1,0 +1,11 @@
+{
+  "name": "your-plugin-name",
+  "description": "一句话说明这个插件做什么（中文或英文均可）",
+  "source": {
+    "source": "github",
+    "repo": "your-github-username/your-plugin-repo",
+    "ref": "v1.0.0"
+  },
+  "author": "your-github-username",
+  "tags": ["productivity"]
+}
