@@ -218,6 +218,22 @@ for (const [fullName, repoPaths] of candidatesByRepo) {
         break;
       }
     }
+    // 兜底：用 releases/latest 的 tag 钉版本，但要求该 tag 上 manifest 的名称与版本都与
+    // 默认分支一致——tag 落后于代码（版本对不上）时不钉，避免用户装到与条目描述不符的旧版本。
+    if (!ref) {
+      try {
+        const release = await ghJson(`/repos/${fullName}/releases/latest`);
+        const tag = typeof release?.tag_name === "string" ? release.tag_name.trim() : "";
+        if (tag) {
+          const pinned = await readManifestAt(fullName, manifestPath, tag);
+          if (pinned.name === name && pinned.version === manifest.version) {
+            ref = tag;
+          }
+        }
+      } catch {
+        // 无 release 或该 tag 上读不到 manifest：保持不钉
+      }
+    }
     const keywords = Array.isArray(manifest.keywords)
       ? manifest.keywords.filter((item) => typeof item === "string").slice(0, 5)
       : [];

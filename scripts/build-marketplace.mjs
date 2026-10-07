@@ -45,13 +45,25 @@ for (const name of featured) {
 }
 
 const plugins = entries.map(({ entry }) => entry).sort((a, b) => a.name.localeCompare(b.name));
-const manifest = {
-  name: meta.name,
-  ...(typeof meta.description === "string" ? { description: meta.description } : {}),
-  ...(featured.length > 0 ? { featured } : {}),
-  plugins,
-};
-writeFileSync(join(rootDir, "marketplace.json"), `${JSON.stringify(manifest, null, 2)}\n`);
+
+// 读取上一版 manifest 里的 trust：非 enrich 构建（本地手动跑）保留已提交的数据，
+// 避免构建产物在「有 trust / 无 trust」之间抖动；条目换了仓库（repo 不同）时旧数据作废。
+const previousTrustByName = new Map();
+try {
+  const previous = JSON.parse(readFileSync(join(rootDir, "marketplace.json"), "utf8"));
+  for (const item of previous?.plugins ?? []) {
+    if (
+      typeof item?.name === "string" &&
+      item.trust &&
+      typeof item.trust === "object" &&
+      typeof item.source?.repo === "string"
+    ) {
+      previousTrustByName.set(item.name, { repo: item.source.repo, trust: item.trust });
+    }
+  }
+} catch {
+  // 首次构建没有历史 manifest
+}
 
 // 信任信号（可选增强）：CI 带 MARKETPLACE_ENRICH=1 时抓 star 与最近 push 时间写进 README。
 // 尽力而为——单个仓库失败记 null，绝不让构建失败；本地不带该环境变量时保持离线确定性。
@@ -83,15 +95,44 @@ if (enrich) {
   }
 }
 
-function trustCells(entry) {
+function resolveTrustForEntry(entry) {
   const source = entry.source ?? {};
-  if (source.source !== "github") return { stars: "—", pushedAt: "—" };
-  const trust = trustByRepo.get(source.repo);
+  if (source.source !== "github" || typeof source.repo !== "string") return undefined;
+  if (enrich) {
+    const fresh = trustByRepo.get(source.repo);
+    if (fresh) {
+      return {
+        ...(typeof fresh.stars === "number" ? { stars: fresh.stars } : {}),
+        ...(typeof fresh.pushedAt === "string" ? { pushedAt: fresh.pushedAt } : {}),
+        ...(fresh.archived ? { archived: true } : {}),
+        fetchedAt: new Date().toISOString().slice(0, 10),
+      };
+    }
+  }
+  const previous = previousTrustByName.get(entry.name);
+  return previous && previous.repo === source.repo ? previous.trust : undefined;
+}
+
+// trust 随条目写进 marketplace.json：客户端商店详情页/卡片直接消费，无需自己访问 GitHub。
+const pluginsWithTrust = plugins.map((entry) => {
+  const trust = resolveTrustForEntry(entry);
+  return trust ? { ...entry, trust } : entry;
+});
+const manifest = {
+  name: meta.name,
+  ...(typeof meta.description === "string" ? { description: meta.description } : {}),
+  ...(featured.length > 0 ? { featured } : {}),
+  plugins: pluginsWithTrust,
+};
+writeFileSync(join(rootDir, "marketplace.json"), `${JSON.stringify(manifest, null, 2)}\n`);
+
+function trustCells(entry) {
+  const trust = entry.trust;
   if (!trust) return { stars: "—", pushedAt: "—" };
-  if (trust.archived) return { stars: "⚠", pushedAt: "已归档" };
+  if (trust.archived === true) return { stars: "⚠", pushedAt: "已归档" };
   return {
-    stars: trust.stars === null ? "—" : `⭐ ${trust.stars}`,
-    pushedAt: trust.pushedAt ?? "—",
+    stars: typeof trust.stars === "number" ? `⭐ ${trust.stars}` : "—",
+    pushedAt: typeof trust.pushedAt === "string" ? trust.pushedAt : "—",
   };
 }
 
@@ -121,14 +162,13 @@ const table =
     : [
         "| 插件 | 说明 | 来源 | 版本钉 | 星标 | 最近更新 | 标签 |",
         "| --- | --- | --- | --- | --- | --- | --- |",
-        ...plugins.map((entry) => {
+        ...pluginsWithTrust.map((entry) => {
           const star = featured.includes(entry.name) ? "⭐ " : "";
           const trust = trustCells(entry);
           return `| ${star}\`${entry.name}\` | ${escapeCell(entry.description ?? "")} | ${sourceCell(entry)} | ${pinCell(entry)} | ${trust.stars} | ${trust.pushedAt} | ${escapeCell((entry.tags ?? []).join(", ")) || "—"} |`;
         }),
         "",
-        `共 ${plugins.length} 个插件。` +
-          (enrich ? "（星标与最近更新由每日构建任务自动刷新）" : ""),
+        `共 ${plugins.length} 个插件。（星标与最近更新由索引 CI 每日刷新）`,
       ].join("\n");
 
 const readmePath = join(rootDir, "README.md");
