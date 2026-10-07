@@ -6,6 +6,184 @@
   ],
   "plugins": [
     {
+      "name": "1c-dev-rules",
+      "description": "Универсальный подключаемый набор правил разработки 1С:Предприятие 8 на основе v8std. Скилы для написания и ревью кода: запросы, формы, метаданные, транзакции, производительность, чек-листы.",
+      "source": {
+        "source": "github",
+        "repo": "Roman-repo/1c-dev-rules"
+      },
+      "author": "Roman",
+      "homepage": "https://github.com/Roman-repo/1c-dev-rules"
+    },
+    {
+      "name": "agent-tools",
+      "description": "Reusable Agent Skills from agent-tools",
+      "source": {
+        "source": "github",
+        "repo": "kairyou/agent-tools",
+        "ref": "v0.23.1"
+      },
+      "author": "kairyou",
+      "homepage": "https://github.com/kairyou/agent-tools"
+    },
+    {
+      "name": "ai-look-up",
+      "description": "Detects aimless AI grinding (repeated commands, failure loops, long runs with no output) and injects mid-run self-review nudges plus real local-time anchors via hooks, so the AI looks up, re-checks progress and calibrates its time estimates.",
+      "source": {
+        "source": "github",
+        "repo": "1344738825/ai-look-up"
+      },
+      "author": "shenjingbing",
+      "homepage": "https://github.com/1344738825/ai-look-up"
+    },
+    {
+      "name": "ai-ui-aesthetics",
+      "description": "前端美学增强插件。Skill（教 AI 写漂亮 UI：设计 Token、排版层级、留白、丝滑动效）+ MCP（设计调研：抓参考站、扫图取色、配色建议）。零依赖、框架无关，可跨 Agent Harness（含 DeepSeek Harness）使用。",
+      "source": {
+        "source": "github",
+        "repo": "Jaye2610/ai-ui-aesthetics"
+      },
+      "author": "jaye",
+      "homepage": "https://github.com/Jaye2610/ai-ui-aesthetics"
+    },
+    {
+      "name": "antigravity-proxy",
+      "description": "Access Claude & Gemini models via Google Antigravity OAuth. Auto-starts a local OpenAI-compatible proxy when ZCode launches — no manual setup needed.",
+      "source": {
+        "source": "github",
+        "repo": "shubham-kr2002/zcode-antigravity-auth"
+      },
+      "author": {
+        "name": "ZCode Antigravity",
+        "url": "https://github.com/zcode-antigravity-proxy"
+      },
+      "homepage": "https://github.com/shubham-kr2002/zcode-antigravity-auth",
+      "tags": [
+        "antigravity",
+        "oauth",
+        "claude",
+        "gemini",
+        "proxy"
+      ]
+    },
+    {
+      "name": "api-quota",
+      "description": "查看当前模型 API 的剩余余额/套餐额度与生成速度：输入框下方状态条、/quota 命令、会话启动自动注入、常驻悬浮窗；数据服务随 ZCode 启停",
+      "source": {
+        "source": "github",
+        "repo": "2877905731/zcode-quota",
+        "ref": "v1.1.1"
+      },
+      "author": "2877905731",
+      "homepage": "https://github.com/2877905731/zcode-quota"
+    },
+    {
+      "name": "auto-continue",
+      "description": "自动继续插件:开启后当对话结束(包括正常结束与出错停止)时自动让 agent 继续;支持设置生效时长与自定义继续消息文本;agent 可调用工具让本轮结束后不触发;/auto-continue 命令直连执行,不消耗模型调用。",
+      "source": {
+        "source": "github",
+        "repo": "chr431/zcode-plugin-auto-continue"
+      },
+      "author": "Eric",
+      "homepage": "https://github.com/chr431/zcode-plugin-auto-continue"
+    },
+    {
+      "name": "blindfold",
+      "description": "Block tool calls that would pull a registered .env secret into the model context, raw or in any transform form (base64/hex/reversed/url-encoded).",
+      "source": {
+        "source": "github",
+        "repo": "wicahma/blindfold"
+      },
+      "author": "wicahma",
+      "homepage": "https://github.com/wicahma/blindfold"
+    },
+    {
+      "name": "chuigong",
+      "description": "垂拱而治：君上（主对话）只做拆解、派发、裁决、汇总，调研/写作/编码/数据处理/审核全部由预置百官子智能体（通政·翰林·将作·书吏·御史）执行；含究诘（需求拷问）与 sdd（严肃流程）技能；出厂模型 GLM-5.3-Flash，可经设置→子智能体 UI 更换",
+      "source": {
+        "source": "github",
+        "repo": "rouyiemei/chuigong"
+      },
+      "author": "rouyiemei",
+      "homepage": "https://github.com/rouyiemei/chuigong",
+      "tags": [
+        "zcode-plugin",
+        "multi-agent",
+        "delegation",
+        "subagents",
+        "orchestration"
+      ]
+    },
+    {
+      "name": "claritykit",
+      "description": "Turn vague design into reviewable artifacts — direction, requirements, architecture candidates, behavior models, data contracts, UI prototypes — with tool-derived paths, an optional explicitly-activated design flow, and a managed preview site.",
+      "source": {
+        "source": "github",
+        "repo": "maxi3777/claritykit"
+      },
+      "author": {
+        "name": "maxi3777",
+        "url": "https://github.com/maxi3777"
+      },
+      "homepage": "https://github.com/maxi3777/claritykit",
+      "tags": [
+        "specification",
+        "clarification",
+        "agent-skills",
+        "design-flow",
+        "mermaid"
+      ]
+    },
+    {
+      "name": "codebase-quality-review",
+      "description": "Read-only whole-codebase quality review and report verification skills.",
+      "source": {
+        "source": "github",
+        "repo": "LinnetCodes/codebase-quality-review"
+      },
+      "author": "LinnetCodes",
+      "homepage": "https://github.com/LinnetCodes/codebase-quality-review"
+    },
+    {
+      "name": "dragon-agents",
+      "description": "Read-only research subagents for repo, markets, and machine work: repo maps, doc-drift and release audits, cascade and spec checks, CI triage and posture, workspace sweeps, code review, git archaeology, claim verification, dependency and test-gap audits, debt census, duplication scouting, slop reads, equity and ETF research briefs from keyless public market data, personal finance and library briefs, dataset profiling, security review, machine and backup health census, and charter design for new ",
+      "source": {
+        "source": "github",
+        "repo": "VirInvictus/dragon-agents",
+        "ref": "v0.6.0"
+      },
+      "author": "Brandon (bdkl)",
+      "homepage": "https://github.com/VirInvictus/dragon-agents"
+    },
+    {
+      "name": "easyslides",
+      "description": "Create editable research presentations, reuse native and image-reference templates, or rebuild approved images as whole slides or selected regions. New image generation requires a supported host; approved images can be supplied directly.",
+      "source": {
+        "source": "github",
+        "repo": "Rimagination/easyslides",
+        "ref": "v1.2.0"
+      },
+      "author": "EasySlides contributors",
+      "homepage": "https://github.com/Rimagination/easyslides",
+      "tags": [
+        "PowerPoint",
+        "PPTX",
+        "academic presentations",
+        "research presentations",
+        "editable slides"
+      ]
+    },
+    {
+      "name": "en-prompt",
+      "description": "Translates non-English user prompts to English before they reach the LLM, for token optimization and better results. Uses a UserPromptSubmit hook with a pluggable translation engine (local Ollama by default). Runs entirely via a Python 3 stdlib script — no pip dependencies. When the active language is on the configured allowlist and is not English, the hook calls the configured engine; on engine failure it blocks the prompt with a clear reason, and undetectable/code-heavy prompts pass through un",
+      "source": {
+        "source": "github",
+        "repo": "ricardopera/en-prompt"
+      },
+      "author": "ricardopera",
+      "homepage": "https://github.com/ricardopera/en-prompt"
+    },
+    {
       "name": "engram",
       "description": "Evidence-based learning engine: first-principles curricula, generation-first Socratic tutoring, free-recall verification with receipts, FSRS-scheduled memory, and interactive explorable artifacts. Learn anything; keep it.",
       "source": {
@@ -24,6 +202,912 @@
         "memory",
         "productivity"
       ]
+    },
+    {
+      "name": "feige-fry-cards",
+      "description": "🕊️ 飞鸽卡片：agent 无关的结果汇报插件。ZCode 会话收尾时自动生成摘要战报卡（标题 + ≤300 字摘要 + 模型/💭/🔧/上下文/⏱️ 统计脚注），经 webhook 或 CardKit 直发飞书群。内置 Stop hook（默认关）、feige send CLI 与 feige 技能。",
+      "source": {
+        "source": "github",
+        "repo": "techysy/feige-fry-cards"
+      },
+      "author": "techysy",
+      "homepage": "https://github.com/techysy/feige-fry-cards",
+      "tags": [
+        "feishu",
+        "lark",
+        "card",
+        "notification",
+        "report"
+      ]
+    },
+    {
+      "name": "fn-ladder",
+      "description": "函数阶梯：以函数为颗粒度的开发流技能套件——需求打磨、函数划分、骨架、分批实现、收尾核验五阶段 + 存量重构/多项目合并两个入口，用机器可验证的判据防 AI 假完成。",
+      "source": {
+        "source": "github",
+        "repo": "r-y-ren/fn-ladder",
+        "ref": "v2.1.0"
+      },
+      "author": "r-y-ren",
+      "homepage": "https://github.com/r-y-ren/fn-ladder",
+      "tags": [
+        "skills",
+        "workflow",
+        "anti-fake-completion",
+        "function-ladder"
+      ]
+    },
+    {
+      "name": "focus-guard",
+      "description": "卷宗四册(.ai/CASE_FILE.md：环境声明落卷/依赖声明/侦查取证/额度台账)；取证指纹 mtime+size+SHA-256≤200KB+git 脏态，时间戳伪造不可绕过；自适应 TTL 4h~7天（依赖声明>人工标注>自适应）+ 免重读放行；跨平台命令拦截（PS 禁 bash 管道 / macOS BSD 三禁 / 大小写冲突）；行为触发五条 + L1-L6 梯度处罚 + 熔断期只读放行；体积刺客三闸 / 盲写拦截 / 风险文件留痕 / 每5次写操作全量审计；上下文污染检测(58条) + 污染核实闸；三预算池 侦查15/执行10/委托20，续杯+10、硬上限200；委派条例：子代理摘要四字段≤200字、强制委派场景 KPI、熔断期委派=越权；高危命令闸(2.4.0)：rm类/强推/清盘/删库/发包/全局安装六类须【高危申请】审批单，y 放行本次、n 彻底阻断、逐字一致；DSH 硬拦截(2.5.0)：官方桥直跑本 hooks.json，exit 2 阻断、stderr 原文透传；改动前自动备份 .ai/backup/、PATTERNS.md 经验按需检索。",
+      "source": {
+        "source": "github",
+        "repo": "irisblackwood/focus-guard",
+        "ref": "v3.0.4"
+      },
+      "author": {
+        "name": "irisblackwood",
+        "url": "https://github.com/irisblackwood"
+      },
+      "homepage": "https://github.com/irisblackwood/focus-guard"
+    },
+    {
+      "name": "forge",
+      "description": "Unified AI coding workflow framework — /forge single entry, 38 subcommands, TDD, spec-driven, automated review. Claude Code + Zcode dual-platform, GLM-5.2 Long Horizon optimized.",
+      "source": {
+        "source": "github",
+        "repo": "kkkman22/Forge"
+      },
+      "author": {
+        "name": "Forge contributors",
+        "url": "https://github.com/kkkman22/Forge"
+      },
+      "homepage": "https://github.com/kkkman22/Forge",
+      "tags": [
+        "workflow",
+        "tdd",
+        "spec-driven",
+        "code-review",
+        "ci"
+      ]
+    },
+    {
+      "name": "fun-code",
+      "description": "Joke troll mode: the agent works like an overconfident clumsy idiot, plants silly mistakes in the easiest places, and stays annoying until told to stop.",
+      "source": {
+        "source": "github",
+        "repo": "temmeik/fun-code"
+      },
+      "author": "Yeban",
+      "homepage": "https://github.com/temmeik/fun-code"
+    },
+    {
+      "name": "glm-hammer",
+      "description": "Forge-and-hammer engineering harness: storyline-driven design tokens verified by a designer panel (crucible), recon-first strong planning verified by a 3-critic panel, and a worker-validator-critic implementation loop with security/QA review gates enforced by hooks.",
+      "source": {
+        "source": "github",
+        "repo": "tmdgusya/glm-hammer"
+      },
+      "author": {
+        "name": "tmdgusya",
+        "url": "https://github.com/tmdgusya"
+      },
+      "homepage": "https://github.com/tmdgusya/glm-hammer",
+      "tags": [
+        "planning",
+        "critic",
+        "worker-validator",
+        "hooks",
+        "engineering-discipline"
+      ]
+    },
+    {
+      "name": "grill-me",
+      "description": "A ZCode plugin for relentlessly stress-testing plans, decisions, and ideas.",
+      "source": {
+        "source": "github",
+        "repo": "LinnetCodes/grill-me"
+      },
+      "author": "LinnetCodes",
+      "homepage": "https://github.com/LinnetCodes/grill-me"
+    },
+    {
+      "name": "hermes-by-everythings",
+      "description": "多平台多语言编码增强套件。39 Agent + 33 Skill + 22 Command + 83 Rules + Ralph 自主循环。支持 TS/Python/Rust/Go/Java/Kotlin 等 10 种语言。",
+      "source": {
+        "source": "github",
+        "repo": "ViewWay/hermes-by-everythings"
+      },
+      "author": {
+        "name": "ViewWay",
+        "url": "https://github.com/ViewWay"
+      },
+      "homepage": "https://github.com/ViewWay/hermes-by-everythings",
+      "tags": [
+        "coding-enhancement",
+        "multi-language",
+        "multi-platform",
+        "tdd",
+        "code-review"
+      ]
+    },
+    {
+      "name": "hindsight",
+      "description": "Durable time-aware memory for ZCode via Hindsight. Exposes hindsight_search (recall), hindsight_context (reflect), and hindsight_retain tools that reuse the SAME hindsight banks as the pi agent. Shares ~/.hindsight/config.json and resolves identical bank IDs.",
+      "source": {
+        "source": "github",
+        "repo": "buihongduc132/hindsight-zcode-local"
+      },
+      "author": "bhd",
+      "homepage": "https://github.com/buihongduc132/hindsight-zcode-local"
+    },
+    {
+      "name": "honcho",
+      "description": "Persistent memory via Honcho: automatic memory injection at session start, per-turn capture of prompts, tool actions and replies, secret redaction, per-project sessions, and on-demand recall MCP tools.",
+      "source": {
+        "source": "github",
+        "repo": "rakphao/zcode-honcho"
+      },
+      "author": "rakphao",
+      "homepage": "https://github.com/rakphao/zcode-honcho",
+      "tags": [
+        "memory",
+        "honcho",
+        "mcp"
+      ]
+    },
+    {
+      "name": "jsrev",
+      "description": "JS reverse engineering toolkit for coding agents: dual-engine browser MCP (Chromium debugger + Camoufox instrumentation), progressive-disclosure skill, and an evidence-workspace delivery contract. For authorized targets only; the user is responsible for ensuring authorization.",
+      "source": {
+        "source": "github",
+        "repo": "tomlismith007/jsrev"
+      },
+      "author": "jsrev",
+      "homepage": "https://github.com/tomlismith007/jsrev",
+      "tags": [
+        "js-reverse",
+        "mcp",
+        "anti-bot",
+        "jsvmp",
+        "captcha"
+      ]
+    },
+    {
+      "name": "k3s-infra",
+      "description": "k3s-infra operating knowledge for ZCode: GitOps workflow, verify-before-claiming, incident triage, Ansible day-0 hardening, the read-only cluster MCP server, reusable slash commands (health, triage, validate, sync-skills), and a guard hook that blocks cluster write commands.",
+      "source": {
+        "source": "github",
+        "repo": "cploutarchou/k3s-infra"
+      },
+      "author": "Christos Ploutarchou",
+      "homepage": "https://github.com/cploutarchou/k3s-infra",
+      "tags": [
+        "k3s",
+        "kubernetes",
+        "flux",
+        "gitops",
+        "cnpg"
+      ]
+    },
+    {
+      "name": "let-it-flow",
+      "description": "Process skills that scale to task weight. Judgment-first workflows for coding agents: brainstorming, TDD, debugging, spec & plan writing — without the heavyweight enforcement.",
+      "source": {
+        "source": "github",
+        "repo": "Lettucech/let-it-flow"
+      },
+      "author": {
+        "name": "Lettucech",
+        "url": "https://github.com/Lettucech"
+      },
+      "homepage": "https://github.com/Lettucech/let-it-flow",
+      "tags": [
+        "skills",
+        "workflow",
+        "tdd",
+        "debugging",
+        "planning"
+      ]
+    },
+    {
+      "name": "mattpocock-skills",
+      "description": "Matt Pocock's agent skills for real engineering — grilling, spec/ticket flows, TDD, code review, domain modelling and more. ZCode-compatible flat layout.",
+      "source": {
+        "source": "github",
+        "repo": "LonExplorer-coder/mattpocock-skills-zcode"
+      },
+      "author": {
+        "name": "Matt Pocock",
+        "url": "https://www.aihero.dev"
+      },
+      "homepage": "https://github.com/LonExplorer-coder/mattpocock-skills-zcode",
+      "tags": [
+        "engineering",
+        "skills",
+        "tdd",
+        "code-review",
+        "grilling"
+      ]
+    },
+    {
+      "name": "morning-star-harness",
+      "description": "Morning Star — Agent Plugin for harness engineering workflows: a TS Harness Workflow Engine (@mstar-harness/engine) that enforces deterministic workflow gates, plus mstar-* judgment skills for multi-agent code delivery across OpenCode, Cursor, Codex, Kimi Code, ZCode, and omp.",
+      "source": {
+        "source": "github",
+        "repo": "btspoony/mstar-harness",
+        "ref": "v3.11.2"
+      },
+      "author": "Bohao Tang",
+      "homepage": "https://github.com/btspoony/mstar-harness",
+      "tags": [
+        "morning-star",
+        "mstar",
+        "harness",
+        "agent",
+        "multi-agent"
+      ]
+    },
+    {
+      "name": "multi-instructions",
+      "description": "Load additional instruction files into the session context at startup, so you can split rules across many files instead of one AGENTS.md.",
+      "source": {
+        "source": "github",
+        "repo": "abevol/zcode-multi-instructions",
+        "ref": "v1.0.0"
+      },
+      "author": "abevol",
+      "homepage": "https://github.com/abevol/zcode-multi-instructions"
+    },
+    {
+      "name": "multi-model-bridge",
+      "description": "Multi-model collaboration skill: delegate image/vision understanding (or future capabilities) to an external model when the active model lacks them.",
+      "source": {
+        "source": "github",
+        "repo": "Et3rW/multi-model-bridge",
+        "ref": "v1.0.0"
+      },
+      "author": "Et3rW",
+      "homepage": "https://github.com/Et3rW/multi-model-bridge"
+    },
+    {
+      "name": "my-plugin",
+      "description": "八个技能：toolbox（工具路由向导）、mineru（22 类文档转 Markdown）、duckdb（CSV/Parquet/JSON 大表 SQL 聚合）、trafilatura（静态网页正文降噪）、ast-grep（AST 结构化代码检索与批量改写）、bwrap-run（bubblewrap 沙箱执行不可信代码）、remote-compute（性能本远程算力，链路自愈）、web-3d-stack（Web 3D/图形前端全家桶单技能路由：Three.js 基础+游戏、WebGPU/TSL、shadcn/ui，四上游 22 份文档收为内部参考）。 可迁移：技能只写流程，机器状态分两层托管（约定路径由 scripts/bootstrap.sh 重建 + 机器档案 ~/.config/my-plugin/machine.env），换机流程见 docs/MIGRATION.md。",
+      "source": {
+        "source": "github",
+        "repo": "r-y-ren/my-plugin"
+      },
+      "author": "r-y-ren",
+      "homepage": "https://github.com/r-y-ren/my-plugin",
+      "tags": [
+        "skills",
+        "toolbox",
+        "local-tools"
+      ]
+    },
+    {
+      "name": "novelist",
+      "description": "网文写作工具集：/story-setup 一键部署完整写作环境（AGENTS.md + Hooks + Skills + Commands + Rules）到项目目录。零全局污染。基于 oh-story-claudecode 精简适配 ZCode。",
+      "source": {
+        "source": "github",
+        "repo": "GlotTale/novelist"
+      },
+      "author": "Shen Yanshu",
+      "homepage": "https://github.com/GlotTale/novelist"
+    },
+    {
+      "name": "nowledge-mem-zcode",
+      "description": "Native Nowledge Mem connector for ZCode with MCP, Skills, commands, and lifecycle hooks.",
+      "source": {
+        "source": "github",
+        "repo": "nowledge-co/zcode-plugin"
+      },
+      "author": {
+        "name": "Nowledge Labs",
+        "url": "https://nowledge-labs.ai"
+      },
+      "homepage": "https://github.com/nowledge-co/zcode-plugin",
+      "tags": [
+        "zcode",
+        "memory",
+        "mcp",
+        "hooks",
+        "commands"
+      ]
+    },
+    {
+      "name": "oh-my-zcode-slim",
+      "description": "Lean multi-agent orchestration suite for ZCode: 9 native subagents (explorer, oracle, librarian, fixer, designer, observer, council and two councillor seats) plus an orchestrator skill. Pure markdown, zero compiled code.",
+      "source": {
+        "source": "github",
+        "repo": "East5RingRoad-kyle/oh-my-zcode-slim"
+      },
+      "author": {
+        "name": "East5RingRoad-kyle",
+        "url": "https://github.com/East5RingRoad-kyle"
+      },
+      "homepage": "https://github.com/East5RingRoad-kyle/oh-my-zcode-slim",
+      "tags": [
+        "zcode",
+        "multi-agent",
+        "orchestration",
+        "subagents",
+        "agents"
+      ]
+    },
+    {
+      "name": "oh-story",
+      "description": "网络小说创作工具箱：扫榜、拆文、写作、审查、去 AI 味和封面生成。",
+      "source": {
+        "source": "github",
+        "repo": "zenstory-ai/oh-story-claudecode",
+        "ref": "v0.8.4"
+      },
+      "author": "zenstory-ai",
+      "homepage": "https://github.com/zenstory-ai/oh-story-claudecode"
+    },
+    {
+      "name": "omz",
+      "description": "Oh My ZCode — OmO 编排能力的 ZCode 移植：core（9 子代理 / 5 命令 / 4 skill）+ 可选 graph/orchestration/dashboard profile，默认全关",
+      "source": {
+        "source": "github",
+        "repo": "djt889/OhMyZcode",
+        "ref": "v1.8.1"
+      },
+      "author": {
+        "name": "OMZ",
+        "url": "https://github.com/djt889/OhMyZcode"
+      },
+      "homepage": "https://github.com/djt889/OhMyZcode"
+    },
+    {
+      "name": "open-dynamic-workflows",
+      "description": "ODW for Cursor, Grok Bot (via Cursor CLI), Grok Build, ZCode, Antigravity and Copilot, with safe worktree isolation. Claude and Codex hosts use native ultracode/ultra instead.",
+      "source": {
+        "source": "github",
+        "repo": "atebites-hub/open-dynamic-workflows-plugin"
+      },
+      "author": {
+        "name": "Open Dynamic Workflows",
+        "url": "https://github.com/atebites-hub/open-dynamic-workflows-plugin"
+      },
+      "homepage": "https://github.com/atebites-hub/open-dynamic-workflows-plugin",
+      "tags": [
+        "workflow",
+        "orchestration",
+        "subagent",
+        "fan-out",
+        "parallel"
+      ]
+    },
+    {
+      "name": "opencode-importer",
+      "description": "Import OpenCode sessions into ZCode so they appear in the task list and session history.",
+      "source": {
+        "source": "github",
+        "repo": "thanhndv212/zcode-opencode-importer"
+      },
+      "author": "Z.ai",
+      "homepage": "https://github.com/thanhndv212/zcode-opencode-importer"
+    },
+    {
+      "name": "pi-commands",
+      "description": "All pi (pi-coding-agent) prompt-templates imported as ZCode slash-commands. Content verbatim. ZCode derives the command name from the filename, so the 'name:' frontmatter key (when present) is redundant but harmless — ZCode ignores it. v0.2.0 adds a UserPromptSubmit hook that re-injects the command index on every prompt, fixing the runtime disappearance bug where long sessions drop the command listing via tail-window truncation.",
+      "source": {
+        "source": "github",
+        "repo": "buihongduc132/zcode-pi-cmd-loader"
+      },
+      "author": "bhd",
+      "homepage": "https://github.com/buihongduc132/zcode-pi-cmd-loader"
+    },
+    {
+      "name": "prompt-optimizer",
+      "description": "ZCode 提示词优化插件：提供 /optimize 命令和 optimize_prompt MCP 工具，通过 LLM 优化提示词，使其更清晰、更具体、更可执行。",
+      "source": {
+        "source": "github",
+        "repo": "goodie1972/prompt-optimizer"
+      },
+      "author": "goodie1972",
+      "homepage": "https://github.com/goodie1972/prompt-optimizer"
+    },
+    {
+      "name": "pstack",
+      "description": "ZCode port of poteto's pstack: rigorous agent workflows, principles, playbooks and subagents you can parallelize with confidence. Write less, higher quality code.",
+      "source": {
+        "source": "github",
+        "repo": "Luks3110/pstack-zcode"
+      },
+      "author": "Lauren Tan (poteto); ZCode port by Luks3110",
+      "homepage": "https://github.com/Luks3110/pstack-zcode",
+      "tags": [
+        "pstack",
+        "poteto-mode",
+        "workflow",
+        "principles",
+        "agent-style"
+      ]
+    },
+    {
+      "name": "quantpylab-agents",
+      "description": "QuantPyLab custom subagents: research-reviewer and financial-report-extractor (migrated from .opencode/agents, general excluded).",
+      "source": {
+        "source": "github",
+        "repo": "hrzzzrh/QuantPyLab"
+      },
+      "author": "hrzzzrh",
+      "homepage": "https://github.com/hrzzzrh/QuantPyLab"
+    },
+    {
+      "name": "remotion",
+      "description": "Create, preview and render videos with Remotion in ZCode. The reliability layer: bootstraps the official Remotion Agent Skills via the official installer, pre-flights the environment, routes to the right official skill, gates renders on visual QA. 用官方安装器引导 Remotion 官方技能，环境预检、静帧门禁、渲染校验一体化。",
+      "source": {
+        "source": "github",
+        "repo": "AIwork4me/zcode-remotion",
+        "ref": "v0.2.5"
+      },
+      "author": "ZCode Remotion Plugin Contributors",
+      "homepage": "https://github.com/AIwork4me/zcode-remotion",
+      "tags": [
+        "remotion",
+        "video-generation",
+        "programmatic-video",
+        "animation",
+        "render"
+      ]
+    },
+    {
+      "name": "scientific-research-plugin",
+      "description": "A full-lifecycle research pipeline for OR & ML, 13 skills + 2 subagents take a project from prior-art survey to the conference talk and poster — Zotero literature intake, structured reading notes, note-driven PDF category highlighting, publication-grade figures, top-journal-style section drafting, LaTeX polishing, noun-term jargon auditing, citation verification against official APIs, three-blind adversarial review, and point-by-point rebuttal. Its prior-art survey covers research-grade question",
+      "source": {
+        "source": "github",
+        "repo": "pengkangzhen/scientific-research-plugin",
+        "ref": "v0.11.0"
+      },
+      "author": {
+        "name": "pengkangzhen",
+        "url": "https://github.com/pengkangzhen"
+      },
+      "homepage": "https://github.com/pengkangzhen/scientific-research-plugin",
+      "tags": [
+        "academic",
+        "research",
+        "zotero",
+        "latex",
+        "peer-review"
+      ]
+    },
+    {
+      "name": "senmu-buildos",
+      "description": "Project governance and engineering coaching for AI coding agents: align requirements and interface design, reuse frameworks and components, improve code quality, and deliver with evidence.",
+      "source": {
+        "source": "github",
+        "repo": "SenMuShare/senmu-buildos",
+        "ref": "v2.24.1"
+      },
+      "author": {
+        "name": "Senmu",
+        "url": "https://github.com/SenMuShare"
+      },
+      "homepage": "https://github.com/SenMuShare/senmu-buildos",
+      "tags": [
+        "zcode",
+        "zcode-plugin",
+        "agent-skills",
+        "ai-agents",
+        "project-management"
+      ]
+    },
+    {
+      "name": "session-sync",
+      "description": "Sync ZCode conversations across devices via Cloudflare Workers. Install on every machine — sessions stay in sync automatically.",
+      "source": {
+        "source": "github",
+        "repo": "Thebored1/session-sync"
+      },
+      "author": "Thebored1",
+      "homepage": "https://github.com/Thebored1/session-sync"
+    },
+    {
+      "name": "silverbullet-mcp",
+      "description": "Read, write, append, delete and search pages in a SilverBullet space through the silverbullet-mcp MCP endpoint.",
+      "source": {
+        "source": "github",
+        "repo": "wicahma/silverbullet-mcp"
+      },
+      "author": {
+        "name": "Teguh Dwi Cahya Kusuma",
+        "url": "https://github.com/wicahma"
+      },
+      "homepage": "https://github.com/wicahma/silverbullet-mcp",
+      "tags": [
+        "mcp",
+        "silverbullet",
+        "notes",
+        "markdown",
+        "knowledge-base"
+      ]
+    },
+    {
+      "name": "software-project-governance",
+      "description": "AI coding delivery trust layer for governance-aware coding agents. Tracks goals, evidence, risks, quality budgets, and release readiness without making broad runtime claims.",
+      "source": {
+        "source": "github",
+        "repo": "peterwangze/software-project-governance",
+        "ref": "v0.95.0"
+      },
+      "author": {
+        "name": "peterwangze",
+        "url": "https://github.com/peterwangze"
+      },
+      "homepage": "https://github.com/peterwangze/software-project-governance"
+    },
+    {
+      "name": "strictlybetter",
+      "description": "Universal noise-aware research loop for agentic coders: discover metrics, measure sigma, pre-register, confirm on holdout. Every merge is strictly better.",
+      "source": {
+        "source": "github",
+        "repo": "nagisanzenin/strictlybetter",
+        "ref": "v1.3.1"
+      },
+      "author": "nagisanzenin",
+      "homepage": "https://github.com/nagisanzenin/strictlybetter",
+      "tags": [
+        "research-loop",
+        "autoresearch",
+        "optimization",
+        "benchmarking",
+        "noise-floor"
+      ]
+    },
+    {
+      "name": "taskforge",
+      "description": "BuilderOS-shaped ideate-to-launch pipeline with Task Master as the dependency-aware execution backbone. Adds /taskforge-init, /taskforge-sync (backup → isolated re-parse → deterministic diff → human-gated additive import) and /taskforge-roadmap.",
+      "source": {
+        "source": "github",
+        "repo": "mrlfarano/taskforge"
+      },
+      "author": "TaskForge",
+      "homepage": "https://github.com/mrlfarano/taskforge"
+    },
+    {
+      "name": "taskswarm",
+      "description": "任务蜂群：多级任务拆解 + 波次并行派发子代理 + 共享看板进度互通。主代理把任务拆成任务树，按依赖波次并行启动后台子代理，子代理通过 MCP 看板互查进度，主代理负责转发关键进展与最终汇总。零依赖 Node 实现，可跨平台移植。",
+      "source": {
+        "source": "github",
+        "repo": "Wersky/taskswarm"
+      },
+      "author": "Wersky",
+      "homepage": "https://github.com/Wersky/taskswarm"
+    },
+    {
+      "name": "terraphim-skills-intro",
+      "description": "Search code, capture learning, and retrieve memory with Terraphim command-line tools.",
+      "source": {
+        "source": "github",
+        "repo": "terraphim/terraphim-cursor-plugin",
+        "ref": "v0.2.3"
+      },
+      "author": "Terraphim AI",
+      "homepage": "https://github.com/terraphim/terraphim-cursor-plugin",
+      "tags": [
+        "terraphim",
+        "code-search",
+        "learning",
+        "memory",
+        "knowledge-graph"
+      ]
+    },
+    {
+      "name": "testcase",
+      "description": "Agent skills for requirements review, test cases, verified implementation, prompt normalization, and Notion/Slack capture.",
+      "source": {
+        "source": "github",
+        "repo": "xtieume/testcase",
+        "ref": "v1.17.1"
+      },
+      "author": "xtieume",
+      "homepage": "https://github.com/xtieume/testcase",
+      "tags": [
+        "skills",
+        "testing",
+        "test-cases",
+        "qa",
+        "quality-assurance"
+      ]
+    },
+    {
+      "name": "thinloop",
+      "description": "Simplify complex development with Issue-backed discovery, risk-adaptive Web experience and architecture design, non-executing multi-Issue project decomposition into dependency DAGs, bounded READY-wave execution, read-only project-status navigation, project-scale refactoring and cross-stack reimplementation, autonomous single-Issue PR delivery, evidence-backed maintenance, concise experiential knowledge, and human-approved skill evolution.",
+      "source": {
+        "source": "github",
+        "repo": "mindcarver/thinloop"
+      },
+      "author": "mindcarver",
+      "homepage": "https://github.com/mindcarver/thinloop",
+      "tags": [
+        "coding-agent",
+        "product-discovery",
+        "user-experience",
+        "ui-design",
+        "software-architecture"
+      ]
+    },
+    {
+      "name": "threejs-game-skills",
+      "description": "Three.js 浏览器游戏开发技能集：game-director 总路由，玩法 / 画质 / UI / 资产生成 / 调试 / QA 发布九技能。上游 MIT（Majid Manzarpour）。",
+      "source": {
+        "source": "github",
+        "repo": "r-y-ren/threejs-game-skills"
+      },
+      "author": "r-y-ren",
+      "homepage": "https://github.com/r-y-ren/threejs-game-skills",
+      "tags": [
+        "threejs",
+        "game",
+        "webgl",
+        "skills"
+      ]
+    },
+    {
+      "name": "threejs-skills",
+      "description": "Three.js 基础知识技能集：基础/几何/材质/纹理/光照/动画/着色器/后期/加载/交互十技能。上游 MIT（cloudai-x）。",
+      "source": {
+        "source": "github",
+        "repo": "r-y-ren/threejs-skills"
+      },
+      "author": "r-y-ren",
+      "homepage": "https://github.com/r-y-ren/threejs-skills",
+      "tags": [
+        "threejs",
+        "webgl",
+        "skills"
+      ]
+    },
+    {
+      "name": "tony-agents-pack",
+      "description": "外贸 AI 员工团（ZCode 专用）：找客户、写开发信、做 SEO、运营社媒、盯友商、专业编辑部内容门禁、验网站、管仓库，22 个岗位持续新增；v3 强制每次推送前完成 GitHub 智能体发布审查，支持按本地已配置的模型自动适配安装（见 INSTALL-FOR-AI.md）。",
+      "source": {
+        "source": "github",
+        "repo": "tony-apan/zcode_skills",
+        "ref": "v4.2.3"
+      },
+      "author": "tony-apan",
+      "homepage": "https://github.com/tony-apan/zcode_skills"
+    },
+    {
+      "name": "web-3d-stack",
+      "description": "现代 Web 3D/图形前端全家桶单技能：Three.js 基础+游戏、WebGPU/TSL、shadcn/ui，统一路由入口，22 份上游文档为内部参考。",
+      "source": {
+        "source": "github",
+        "repo": "r-y-ren/web-3d-stack"
+      },
+      "author": "r-y-ren",
+      "homepage": "https://github.com/r-y-ren/web-3d-stack",
+      "tags": [
+        "threejs",
+        "webgpu",
+        "tsl",
+        "shadcn",
+        "game"
+      ]
+    },
+    {
+      "name": "xuexitong-skill",
+      "description": "AI Agent 的学习通(超星)网页版全能技能包:作业辅助作答(只暂存不提交)、课件资料下载、截止日期/成绩/通知汇总,可选视频挂机与签到辅助。",
+      "source": {
+        "source": "github",
+        "repo": "Han-maker-wp/xuexitong-skill"
+      },
+      "author": "Han-maker-wp",
+      "homepage": "https://github.com/Han-maker-wp/xuexitong-skill"
+    },
+    {
+      "name": "zcode-auto-resume",
+      "description": "当 Zcode 因「系统繁忙 / 限流 / 5xx / 超时 / 网络错误」等临时性错误中断时，自动注入继续指令恢复任务；永久性错误（认证、余额、模型不存在等）不盲目重试。",
+      "source": {
+        "source": "github",
+        "repo": "cv-superding/zcode-auto-resume"
+      },
+      "author": "zcode-auto-resume contributors",
+      "homepage": "https://github.com/cv-superding/zcode-auto-resume"
+    },
+    {
+      "name": "zcode-feature-dev",
+      "description": "Guided feature development workflow with specialized agents for codebase exploration, architecture design, and quality review. ZCode-native port of the feature-dev plugin.",
+      "source": {
+        "source": "github",
+        "repo": "DeepCoach/zcode-feature-dev"
+      },
+      "author": "DeepSleep",
+      "homepage": "https://github.com/DeepCoach/zcode-feature-dev",
+      "tags": [
+        "feature-development",
+        "workflow",
+        "code-explorer",
+        "code-architect",
+        "code-reviewer"
+      ]
+    },
+    {
+      "name": "zcode-feishu-bridge",
+      "description": "把 ZCode 会话实时镜像到飞书流式卡片：逐轮进度、项目标签、用量面板。不改 ZCode 源码、零依赖。 Mirror live ZCode sessions into Feishu streaming cards: per-turn progress, project labels and a usage panel. Zero source patching, zero dependencies.",
+      "source": {
+        "source": "github",
+        "repo": "techysy/zcode-feishu-bridge",
+        "ref": "v1.1.0"
+      },
+      "author": "techysy",
+      "homepage": "https://github.com/techysy/zcode-feishu-bridge",
+      "tags": [
+        "feishu",
+        "lark",
+        "zcode",
+        "streaming-card",
+        "bridge"
+      ]
+    },
+    {
+      "name": "zcode-plugin-honcho",
+      "description": "Fail-open Honcho memory for ZCode sessions.",
+      "source": {
+        "source": "github",
+        "repo": "erlinerd/zcode-plugin-honcho",
+        "ref": "v0.2.4"
+      },
+      "author": "Community contributor",
+      "homepage": "https://github.com/erlinerd/zcode-plugin-honcho",
+      "tags": [
+        "honcho",
+        "memory",
+        "persistent-memory",
+        "context",
+        "hooks"
+      ]
+    },
+    {
+      "name": "zcode-plugin-langfuse",
+      "description": "Fail-open Langfuse tracing for ZCode sessions, prompts, tool calls, and assistant responses.",
+      "source": {
+        "source": "github",
+        "repo": "erlinerd/zcode-plugin-langfuse",
+        "ref": "v0.3.0"
+      },
+      "author": "Community contributor",
+      "homepage": "https://github.com/erlinerd/zcode-plugin-langfuse",
+      "tags": [
+        "langfuse",
+        "observability",
+        "tracing",
+        "telemetry",
+        "hooks"
+      ]
+    },
+    {
+      "name": "zcode-safe-setup",
+      "description": "Audit, install, verify, and roll back an OS-enforced ZCode boundary: a dedicated low-privilege Windows user, NTFS ACL workspace grants, secret deny ACEs, a Program Files launcher copy, and recoverable Git checkpoints.",
+      "source": {
+        "source": "github",
+        "repo": "QianQIUlp/zcode-safe-setup"
+      },
+      "author": {
+        "name": "QianQIUlp and Codex Safe Setup Contributors",
+        "url": "https://github.com/QianQIUlp"
+      },
+      "homepage": "https://github.com/QianQIUlp/zcode-safe-setup"
+    },
+    {
+      "name": "zcode-skins",
+      "description": "ZCode 皮肤美化与主题工坊插件：提供精美主题画廊、自定义壁纸、Steam Wallpaper Engine 动态壁纸深度集成与玻璃拟态毛玻璃视觉增强。",
+      "source": {
+        "source": "github",
+        "repo": "CaptainMusX/zcode-skins",
+        "ref": "v1.1.2"
+      },
+      "author": "CaptainMusX",
+      "homepage": "https://github.com/CaptainMusX/zcode-skins"
+    },
+    {
+      "name": "zcode-tarkov",
+      "description": "Escape-from-Tarkov-inspired theme mode for the ZCode desktop client: a fixed Tarkov palette, Monet wallpaper-derived colors, or ZCode's native colors.",
+      "source": {
+        "source": "github",
+        "repo": "BakaronLab/zcode-tarkov",
+        "ref": "v0.2.3"
+      },
+      "author": "zcode-tarkov contributors",
+      "homepage": "https://github.com/BakaronLab/zcode-tarkov"
+    },
+    {
+      "name": "zcode-tokenspeed",
+      "description": "ZCode 桌面客户端本地补丁注入工具：思考档位配置、用量页去截断、模型弹窗加宽、TPS 状态栏、思考强度滑条、增强提示词按钮（右键可选润色所用模型）、设置页模型拉取按钮。装完重启即自动注入（零配置），全部幂等、可检查、可精确还原，并支持在插件详情页逐项开关。",
+      "source": {
+        "source": "github",
+        "repo": "c80361619/zcode-toolkit"
+      },
+      "author": "c80361619",
+      "homepage": "https://github.com/c80361619/zcode-toolkit"
+    },
+    {
+      "name": "zcode-vision",
+      "description": "Automatic image recognition for text-only models in ZCode (LongCat, DeepSeek, etc.) — 为纯文本模型提供自动识图能力",
+      "source": {
+        "source": "github",
+        "repo": "5uyuz/zcode-vision-plugin"
+      },
+      "author": "zcode-vision contributors",
+      "homepage": "https://github.com/5uyuz/zcode-vision-plugin"
+    },
+    {
+      "name": "zcode-wakatime",
+      "description": "Track ZCode usage time in WakaTime: sends heartbeats on UserPromptSubmit and PostToolUse via wakatime-cli, attributed to the current working directory's project.",
+      "source": {
+        "source": "github",
+        "repo": "COSMICAL-CONTAINER/zcode-wakatime"
+      },
+      "author": {
+        "name": "COSMICAL-CONTAINER",
+        "url": "https://github.com/COSMICAL-CONTAINER"
+      },
+      "homepage": "https://github.com/COSMICAL-CONTAINER/zcode-wakatime",
+      "tags": [
+        "wakatime",
+        "time-tracking",
+        "hooks",
+        "zcode",
+        "glm"
+      ]
+    },
+    {
+      "name": "zen-useragent",
+      "description": "Use OpenCode ZEN free models in ZCode. Runs a loopback proxy that rewrites the outgoing User-Agent to opencode/... so ZEN free models stop returning 429 FreeUsageLimitError, and wires a matching custom provider into ZCode.",
+      "source": {
+        "source": "github",
+        "repo": "dddsx3/zcode-plugin-zen-useragent"
+      },
+      "author": "zcode-zen-useragent",
+      "homepage": "https://github.com/dddsx3/zcode-plugin-zen-useragent",
+      "tags": [
+        "opencode",
+        "zen",
+        "free-models",
+        "proxy",
+        "user-agent"
+      ]
+    },
+    {
+      "name": "zmem",
+      "description": "Multi-tier memory system for ZCode: always-on core memory, cross-session lessons with FTS5 recall, and reflection-on-failure. Local-first, zero cloud dependency.",
+      "source": {
+        "source": "github",
+        "repo": "zaxbysauce/zmem",
+        "ref": "v0.84.0"
+      },
+      "author": {
+        "name": "Brett",
+        "url": "https://github.com/zaxbysauce"
+      },
+      "homepage": "https://github.com/zaxbysauce/zmem"
+    },
+    {
+      "name": "zpeak",
+      "description": "Offline peak-hour usage guard: warns when the clock (UTC) is inside user-configured provider peak windows (e.g. ZAI GLM 06:00-10:00), banners on session start, and asks for confirmation on the first prompt of a session during peak hours. Clock only, no network.",
+      "source": {
+        "source": "github",
+        "repo": "amurru/zpeak"
+      },
+      "author": "amurru",
+      "homepage": "https://github.com/amurru/zpeak"
+    },
+    {
+      "name": "zpet",
+      "description": "Codex-style desktop pet for ZCode: a transparent always-on-top companion that reflects agent working state in real time. Zero runtime dependencies (bundled daemon). Compatible with Codex pet assets (pet.json + spritesheet), including the Petdex ecosystem.",
+      "source": {
+        "source": "github",
+        "repo": "shiaige/ZPet",
+        "ref": "v0.4.7"
+      },
+      "author": "shiaige",
+      "homepage": "https://github.com/shiaige/ZPet"
     }
   ]
 }
