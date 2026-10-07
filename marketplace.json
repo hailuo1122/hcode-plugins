@@ -14,6 +14,7 @@
       },
       "author": "Roman",
       "homepage": "https://github.com/Roman-repo/1c-dev-rules",
+      "icon": "https://avatars.githubusercontent.com/u/223091541?v=4",
       "trust": {
         "stars": 3,
         "pushedAt": "2026-09-06",
@@ -30,6 +31,7 @@
       },
       "author": "kairyou",
       "homepage": "https://github.com/kairyou/agent-tools",
+      "icon": "https://avatars.githubusercontent.com/u/544524?v=4",
       "trust": {
         "stars": 180,
         "pushedAt": "2026-09-29",
@@ -45,6 +47,7 @@
       },
       "author": "shenjingbing",
       "homepage": "https://github.com/1344738825/ai-look-up",
+      "icon": "https://avatars.githubusercontent.com/u/329834244?v=4",
       "trust": {
         "stars": 2,
         "pushedAt": "2026-10-06",
@@ -60,6 +63,7 @@
       },
       "author": "jaye",
       "homepage": "https://github.com/Jaye2610/ai-ui-aesthetics",
+      "icon": "https://avatars.githubusercontent.com/u/93827641?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-15",
@@ -85,6 +89,7 @@
         "gemini",
         "proxy"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/98452011?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-07-22",
@@ -101,6 +106,7 @@
       },
       "author": "2877905731",
       "homepage": "https://github.com/2877905731/zcode-quota",
+      "icon": "https://avatars.githubusercontent.com/u/39663516?v=4",
       "trust": {
         "stars": 3,
         "pushedAt": "2026-09-21",
@@ -116,6 +122,7 @@
       },
       "author": "Eric",
       "homepage": "https://github.com/chr431/zcode-plugin-auto-continue",
+      "icon": "https://avatars.githubusercontent.com/u/82587721?v=4",
       "trust": {
         "stars": 3,
         "pushedAt": "2026-09-08",
@@ -131,6 +138,7 @@
       },
       "author": "wicahma",
       "homepage": "https://github.com/wicahma/blindfold",
+      "icon": "https://avatars.githubusercontent.com/u/84257596?v=4",
       "trust": {
         "stars": 1,
         "pushedAt": "2026-10-04",
@@ -153,6 +161,7 @@
         "subagents",
         "orchestration"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/139122325?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-04",
@@ -178,6 +187,7 @@
         "design-flow",
         "mermaid"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/134992307?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-08-26",
@@ -193,6 +203,7 @@
       },
       "author": "LinnetCodes",
       "homepage": "https://github.com/LinnetCodes/codebase-quality-review",
+      "icon": "https://avatars.githubusercontent.com/u/275329174?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-07-19",
@@ -209,6 +220,7 @@
       },
       "author": "Brandon (bdkl)",
       "homepage": "https://github.com/VirInvictus/dragon-agents",
+      "icon": "https://avatars.githubusercontent.com/u/935449?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-06",
@@ -232,8 +244,9 @@
         "research presentations",
         "editable slides"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/57791834?v=4",
       "trust": {
-        "stars": 134,
+        "stars": 135,
         "pushedAt": "2026-09-13",
         "fetchedAt": "2026-10-07"
       }
@@ -247,6 +260,7 @@
       },
       "author": "ricardopera",
       "homepage": "https://github.com/ricardopera/en-prompt",
+      "icon": "https://avatars.githubusercontent.com/u/43217278?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-07-08",
@@ -272,6 +286,7 @@
         "memory",
         "productivity"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/97045551?v=4",
       "trust": {
         "stars": 1441,
         "pushedAt": "2026-08-27",
@@ -294,6 +309,7 @@
         "notification",
         "report"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/8453626?v=4",
       "trust": {
         "stars": 2,
         "pushedAt": "2026-09-26",
@@ -316,6 +332,7 @@
         "anti-fake-completion",
         "function-ladder"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/174572917?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-03",
@@ -335,6 +352,7 @@
         "url": "https://github.com/irisblackwood"
       },
       "homepage": "https://github.com/irisblackwood/focus-guard",
+      "icon": "https://avatars.githubusercontent.com/u/336811486?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-06",
@@ -360,6 +378,7 @@
         "code-review",
         "ci"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/23480907?v=4",
       "trust": {
         "stars": 2,
         "pushedAt": "2026-08-12",
@@ -375,6 +394,7 @@
       },
       "author": "Yeban",
       "homepage": "https://github.com/temmeik/fun-code",
+      "icon": "https://avatars.githubusercontent.com/u/298257631?v=4",
       "trust": {
         "stars": 1,
         "pushedAt": "2026-10-05",
@@ -400,6 +420,7 @@
         "hooks",
         "engineering-discipline"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/57784077?v=4",
       "trust": {
         "stars": 17,
         "pushedAt": "2026-07-12",
@@ -415,6 +436,7 @@
       },
       "author": "LinnetCodes",
       "homepage": "https://github.com/LinnetCodes/grill-me",
+      "icon": "https://avatars.githubusercontent.com/u/275329174?v=4",
       "trust": {
         "stars": 1,
         "pushedAt": "2026-07-19",
@@ -440,6 +462,7 @@
         "tdd",
         "code-review"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/57283862?v=4",
       "trust": {
         "stars": 3,
         "pushedAt": "2026-06-19",
@@ -455,6 +478,7 @@
       },
       "author": "bhd",
       "homepage": "https://github.com/buihongduc132/hindsight-zcode-local",
+      "icon": "https://avatars.githubusercontent.com/u/5408008?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-13",
@@ -475,6 +499,7 @@
         "honcho",
         "mcp"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/9069465?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-05",
@@ -497,6 +522,7 @@
         "jsvmp",
         "captcha"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/210857108?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-05",
@@ -519,6 +545,7 @@
         "gitops",
         "cnpg"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/49656626?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-06",
@@ -544,6 +571,7 @@
         "debugging",
         "planning"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/15228903?v=4",
       "trust": {
         "stars": 1,
         "pushedAt": "2026-07-30",
@@ -569,6 +597,7 @@
         "code-review",
         "grilling"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/240868785?v=4",
       "trust": {
         "stars": 1,
         "pushedAt": "2026-08-02",
@@ -592,6 +621,7 @@
         "agent",
         "multi-agent"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/707025?v=4",
       "trust": {
         "stars": 62,
         "pushedAt": "2026-10-07",
@@ -608,6 +638,7 @@
       },
       "author": "abevol",
       "homepage": "https://github.com/abevol/zcode-multi-instructions",
+      "icon": "https://avatars.githubusercontent.com/u/85929368?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-06",
@@ -624,6 +655,7 @@
       },
       "author": "Et3rW",
       "homepage": "https://github.com/Et3rW/multi-model-bridge",
+      "icon": "https://avatars.githubusercontent.com/u/122676366?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-08-18",
@@ -644,6 +676,7 @@
         "toolbox",
         "local-tools"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/174572917?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-03",
@@ -659,6 +692,7 @@
       },
       "author": "Shen Yanshu",
       "homepage": "https://github.com/GlotTale/novelist",
+      "icon": "https://avatars.githubusercontent.com/u/275107748?v=4",
       "trust": {
         "stars": 1,
         "pushedAt": "2026-07-11",
@@ -684,6 +718,7 @@
         "hooks",
         "commands"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/210230799?v=4",
       "trust": {
         "stars": 3,
         "pushedAt": "2026-09-21",
@@ -709,6 +744,7 @@
         "subagents",
         "agents"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/12547789?v=4",
       "trust": {
         "stars": 2,
         "pushedAt": "2026-08-27",
@@ -725,8 +761,9 @@
       },
       "author": "zenstory-ai",
       "homepage": "https://github.com/zenstory-ai/oh-story-claudecode",
+      "icon": "https://avatars.githubusercontent.com/u/311489559?v=4",
       "trust": {
-        "stars": 7314,
+        "stars": 7317,
         "pushedAt": "2026-10-03",
         "fetchedAt": "2026-10-07"
       }
@@ -744,6 +781,7 @@
         "url": "https://github.com/djt889/OhMyZcode"
       },
       "homepage": "https://github.com/djt889/OhMyZcode",
+      "icon": "https://avatars.githubusercontent.com/u/89187512?v=4",
       "trust": {
         "stars": 3,
         "pushedAt": "2026-09-03",
@@ -769,6 +807,7 @@
         "fan-out",
         "parallel"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/177588422?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-14",
@@ -784,6 +823,7 @@
       },
       "author": "Z.ai",
       "homepage": "https://github.com/thanhndv212/zcode-opencode-importer",
+      "icon": "https://avatars.githubusercontent.com/u/22833373?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-06-18",
@@ -799,6 +839,7 @@
       },
       "author": "bhd",
       "homepage": "https://github.com/buihongduc132/zcode-pi-cmd-loader",
+      "icon": "https://avatars.githubusercontent.com/u/5408008?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-07-26",
@@ -814,6 +855,7 @@
       },
       "author": "goodie1972",
       "homepage": "https://github.com/goodie1972/prompt-optimizer",
+      "icon": "https://avatars.githubusercontent.com/u/43597242?v=4",
       "trust": {
         "stars": 1,
         "pushedAt": "2026-08-28",
@@ -836,6 +878,7 @@
         "principles",
         "agent-style"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/6136276?v=4",
       "trust": {
         "stars": 9,
         "pushedAt": "2026-08-20",
@@ -851,6 +894,7 @@
       },
       "author": "hrzzzrh",
       "homepage": "https://github.com/hrzzzrh/QuantPyLab",
+      "icon": "https://avatars.githubusercontent.com/u/15026770?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-25",
@@ -874,6 +918,7 @@
         "animation",
         "render"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/261514469?v=4",
       "trust": {
         "stars": 1,
         "pushedAt": "2026-10-06",
@@ -900,6 +945,7 @@
         "latex",
         "peer-review"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/86860914?v=4",
       "trust": {
         "stars": 6,
         "pushedAt": "2026-10-07",
@@ -926,6 +972,7 @@
         "ai-agents",
         "project-management"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/30163854?v=4",
       "trust": {
         "stars": 2,
         "pushedAt": "2026-10-02",
@@ -941,6 +988,7 @@
       },
       "author": "Thebored1",
       "homepage": "https://github.com/Thebored1/session-sync",
+      "icon": "https://avatars.githubusercontent.com/u/73662853?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-07-10",
@@ -966,6 +1014,7 @@
         "markdown",
         "knowledge-base"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/84257596?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-04",
@@ -985,6 +1034,7 @@
         "url": "https://github.com/peterwangze"
       },
       "homepage": "https://github.com/peterwangze/software-project-governance",
+      "icon": "https://avatars.githubusercontent.com/u/11926828?v=4",
       "trust": {
         "stars": 1,
         "pushedAt": "2026-10-06",
@@ -1008,6 +1058,7 @@
         "benchmarking",
         "noise-floor"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/97045551?v=4",
       "trust": {
         "stars": 1,
         "pushedAt": "2026-09-03",
@@ -1023,6 +1074,7 @@
       },
       "author": "TaskForge",
       "homepage": "https://github.com/mrlfarano/taskforge",
+      "icon": "https://avatars.githubusercontent.com/u/5720879?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-08-26",
@@ -1038,6 +1090,7 @@
       },
       "author": "Wersky",
       "homepage": "https://github.com/Wersky/taskswarm",
+      "icon": "https://avatars.githubusercontent.com/u/132354992?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-29",
@@ -1061,6 +1114,7 @@
         "memory",
         "knowledge-graph"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/95092935?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-16",
@@ -1084,6 +1138,7 @@
         "qa",
         "quality-assurance"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/107537167?v=4",
       "trust": {
         "stars": 4,
         "pushedAt": "2026-10-06",
@@ -1106,6 +1161,7 @@
         "ui-design",
         "software-architecture"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/32150062?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-01",
@@ -1127,6 +1183,7 @@
         "webgl",
         "skills"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/174572917?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-02",
@@ -1147,6 +1204,7 @@
         "webgl",
         "skills"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/174572917?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-02",
@@ -1163,6 +1221,7 @@
       },
       "author": "tony-apan",
       "homepage": "https://github.com/tony-apan/zcode_skills",
+      "icon": "https://avatars.githubusercontent.com/u/42887808?v=4",
       "trust": {
         "stars": 4,
         "pushedAt": "2026-09-22",
@@ -1185,6 +1244,7 @@
         "shadcn",
         "game"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/174572917?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-03",
@@ -1200,6 +1260,7 @@
       },
       "author": "Han-maker-wp",
       "homepage": "https://github.com/Han-maker-wp/xuexitong-skill",
+      "icon": "https://avatars.githubusercontent.com/u/222974327?v=4",
       "trust": {
         "stars": 3,
         "pushedAt": "2026-09-19",
@@ -1215,6 +1276,7 @@
       },
       "author": "zcode-auto-resume contributors",
       "homepage": "https://github.com/cv-superding/zcode-auto-resume",
+      "icon": "https://avatars.githubusercontent.com/u/105969686?v=4",
       "trust": {
         "stars": 4,
         "pushedAt": "2026-09-14",
@@ -1237,6 +1299,7 @@
         "code-architect",
         "code-reviewer"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/64127362?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-16",
@@ -1260,6 +1323,7 @@
         "streaming-card",
         "bridge"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/8453626?v=4",
       "trust": {
         "stars": 4,
         "pushedAt": "2026-09-26",
@@ -1283,6 +1347,7 @@
         "context",
         "hooks"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/10431861?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-02",
@@ -1306,6 +1371,7 @@
         "telemetry",
         "hooks"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/10431861?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-02",
@@ -1324,6 +1390,7 @@
         "url": "https://github.com/QianQIUlp"
       },
       "homepage": "https://github.com/QianQIUlp/zcode-safe-setup",
+      "icon": "https://avatars.githubusercontent.com/u/175368140?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-08-16",
@@ -1340,6 +1407,7 @@
       },
       "author": "CaptainMusX",
       "homepage": "https://github.com/CaptainMusX/zcode-skins",
+      "icon": "https://avatars.githubusercontent.com/u/147233200?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-05",
@@ -1356,6 +1424,7 @@
       },
       "author": "zcode-tarkov contributors",
       "homepage": "https://github.com/BakaronLab/zcode-tarkov",
+      "icon": "https://avatars.githubusercontent.com/u/297907998?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-19",
@@ -1371,6 +1440,7 @@
       },
       "author": "c80361619",
       "homepage": "https://github.com/c80361619/zcode-toolkit",
+      "icon": "https://avatars.githubusercontent.com/u/102290698?v=4",
       "trust": {
         "stars": 5,
         "pushedAt": "2026-09-24",
@@ -1386,6 +1456,7 @@
       },
       "author": "zcode-vision contributors",
       "homepage": "https://github.com/5uyuz/zcode-vision-plugin",
+      "icon": "https://avatars.githubusercontent.com/u/104608898?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-08-02",
@@ -1411,6 +1482,7 @@
         "zcode",
         "glm"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/60454425?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-06",
@@ -1433,6 +1505,7 @@
         "proxy",
         "user-agent"
       ],
+      "icon": "https://avatars.githubusercontent.com/u/227019283?v=4",
       "trust": {
         "stars": 2,
         "pushedAt": "2026-08-23",
@@ -1452,6 +1525,7 @@
         "url": "https://github.com/zaxbysauce"
       },
       "homepage": "https://github.com/zaxbysauce/zmem",
+      "icon": "https://avatars.githubusercontent.com/u/10211642?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-10-06",
@@ -1467,6 +1541,7 @@
       },
       "author": "amurru",
       "homepage": "https://github.com/amurru/zpeak",
+      "icon": "https://avatars.githubusercontent.com/u/680105?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-07",
@@ -1483,6 +1558,7 @@
       },
       "author": "shiaige",
       "homepage": "https://github.com/shiaige/ZPet",
+      "icon": "https://avatars.githubusercontent.com/u/152460344?v=4",
       "trust": {
         "stars": 0,
         "pushedAt": "2026-09-06",
