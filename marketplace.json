@@ -13,7 +13,12 @@
         "repo": "Roman-repo/1c-dev-rules"
       },
       "author": "Roman",
-      "homepage": "https://github.com/Roman-repo/1c-dev-rules"
+      "homepage": "https://github.com/Roman-repo/1c-dev-rules",
+      "trust": {
+        "stars": 3,
+        "pushedAt": "2026-09-06",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "agent-tools",
@@ -24,7 +29,12 @@
         "ref": "v0.23.1"
       },
       "author": "kairyou",
-      "homepage": "https://github.com/kairyou/agent-tools"
+      "homepage": "https://github.com/kairyou/agent-tools",
+      "trust": {
+        "stars": 180,
+        "pushedAt": "2026-09-29",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "ai-look-up",
@@ -34,7 +44,12 @@
         "repo": "1344738825/ai-look-up"
       },
       "author": "shenjingbing",
-      "homepage": "https://github.com/1344738825/ai-look-up"
+      "homepage": "https://github.com/1344738825/ai-look-up",
+      "trust": {
+        "stars": 2,
+        "pushedAt": "2026-10-06",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "ai-ui-aesthetics",
@@ -44,7 +59,12 @@
         "repo": "Jaye2610/ai-ui-aesthetics"
       },
       "author": "jaye",
-      "homepage": "https://github.com/Jaye2610/ai-ui-aesthetics"
+      "homepage": "https://github.com/Jaye2610/ai-ui-aesthetics",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-15",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "antigravity-proxy",
@@ -64,7 +84,12 @@
         "claude",
         "gemini",
         "proxy"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-07-22",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "api-quota",
@@ -75,7 +100,12 @@
         "ref": "v1.1.1"
       },
       "author": "2877905731",
-      "homepage": "https://github.com/2877905731/zcode-quota"
+      "homepage": "https://github.com/2877905731/zcode-quota",
+      "trust": {
+        "stars": 3,
+        "pushedAt": "2026-09-21",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "auto-continue",
@@ -85,7 +115,12 @@
         "repo": "chr431/zcode-plugin-auto-continue"
       },
       "author": "Eric",
-      "homepage": "https://github.com/chr431/zcode-plugin-auto-continue"
+      "homepage": "https://github.com/chr431/zcode-plugin-auto-continue",
+      "trust": {
+        "stars": 3,
+        "pushedAt": "2026-09-08",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "blindfold",
@@ -95,7 +130,12 @@
         "repo": "wicahma/blindfold"
       },
       "author": "wicahma",
-      "homepage": "https://github.com/wicahma/blindfold"
+      "homepage": "https://github.com/wicahma/blindfold",
+      "trust": {
+        "stars": 1,
+        "pushedAt": "2026-10-04",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "chuigong",
@@ -112,7 +152,12 @@
         "delegation",
         "subagents",
         "orchestration"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-04",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "claritykit",
@@ -132,7 +177,12 @@
         "agent-skills",
         "design-flow",
         "mermaid"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-08-26",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "codebase-quality-review",
@@ -142,7 +192,12 @@
         "repo": "LinnetCodes/codebase-quality-review"
       },
       "author": "LinnetCodes",
-      "homepage": "https://github.com/LinnetCodes/codebase-quality-review"
+      "homepage": "https://github.com/LinnetCodes/codebase-quality-review",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-07-19",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "dragon-agents",
@@ -153,7 +208,12 @@
         "ref": "v0.6.0"
       },
       "author": "Brandon (bdkl)",
-      "homepage": "https://github.com/VirInvictus/dragon-agents"
+      "homepage": "https://github.com/VirInvictus/dragon-agents",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-06",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "easyslides",
@@ -171,7 +231,12 @@
         "academic presentations",
         "research presentations",
         "editable slides"
-      ]
+      ],
+      "trust": {
+        "stars": 134,
+        "pushedAt": "2026-09-13",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "en-prompt",
@@ -181,7 +246,12 @@
         "repo": "ricardopera/en-prompt"
       },
       "author": "ricardopera",
-      "homepage": "https://github.com/ricardopera/en-prompt"
+      "homepage": "https://github.com/ricardopera/en-prompt",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-07-08",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "engram",
@@ -201,7 +271,12 @@
         "learning",
         "memory",
         "productivity"
-      ]
+      ],
+      "trust": {
+        "stars": 1441,
+        "pushedAt": "2026-08-27",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "feige-fry-cards",
@@ -218,7 +293,12 @@
         "card",
         "notification",
         "report"
-      ]
+      ],
+      "trust": {
+        "stars": 2,
+        "pushedAt": "2026-09-26",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "fn-ladder",
@@ -235,7 +315,12 @@
         "workflow",
         "anti-fake-completion",
         "function-ladder"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-03",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "focus-guard",
@@ -249,7 +334,12 @@
         "name": "irisblackwood",
         "url": "https://github.com/irisblackwood"
       },
-      "homepage": "https://github.com/irisblackwood/focus-guard"
+      "homepage": "https://github.com/irisblackwood/focus-guard",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-06",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "forge",
@@ -269,7 +359,12 @@
         "spec-driven",
         "code-review",
         "ci"
-      ]
+      ],
+      "trust": {
+        "stars": 2,
+        "pushedAt": "2026-08-12",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "fun-code",
@@ -279,7 +374,12 @@
         "repo": "temmeik/fun-code"
       },
       "author": "Yeban",
-      "homepage": "https://github.com/temmeik/fun-code"
+      "homepage": "https://github.com/temmeik/fun-code",
+      "trust": {
+        "stars": 1,
+        "pushedAt": "2026-10-05",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "glm-hammer",
@@ -299,7 +399,12 @@
         "worker-validator",
         "hooks",
         "engineering-discipline"
-      ]
+      ],
+      "trust": {
+        "stars": 17,
+        "pushedAt": "2026-07-12",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "grill-me",
@@ -309,7 +414,12 @@
         "repo": "LinnetCodes/grill-me"
       },
       "author": "LinnetCodes",
-      "homepage": "https://github.com/LinnetCodes/grill-me"
+      "homepage": "https://github.com/LinnetCodes/grill-me",
+      "trust": {
+        "stars": 1,
+        "pushedAt": "2026-07-19",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "hermes-by-everythings",
@@ -329,7 +439,12 @@
         "multi-platform",
         "tdd",
         "code-review"
-      ]
+      ],
+      "trust": {
+        "stars": 3,
+        "pushedAt": "2026-06-19",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "hindsight",
@@ -339,7 +454,12 @@
         "repo": "buihongduc132/hindsight-zcode-local"
       },
       "author": "bhd",
-      "homepage": "https://github.com/buihongduc132/hindsight-zcode-local"
+      "homepage": "https://github.com/buihongduc132/hindsight-zcode-local",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-13",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "honcho",
@@ -354,7 +474,12 @@
         "memory",
         "honcho",
         "mcp"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-05",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "jsrev",
@@ -371,7 +496,12 @@
         "anti-bot",
         "jsvmp",
         "captcha"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-05",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "k3s-infra",
@@ -388,7 +518,12 @@
         "flux",
         "gitops",
         "cnpg"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-06",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "let-it-flow",
@@ -408,7 +543,12 @@
         "tdd",
         "debugging",
         "planning"
-      ]
+      ],
+      "trust": {
+        "stars": 1,
+        "pushedAt": "2026-07-30",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "mattpocock-skills",
@@ -428,7 +568,12 @@
         "tdd",
         "code-review",
         "grilling"
-      ]
+      ],
+      "trust": {
+        "stars": 1,
+        "pushedAt": "2026-08-02",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "morning-star-harness",
@@ -446,7 +591,12 @@
         "harness",
         "agent",
         "multi-agent"
-      ]
+      ],
+      "trust": {
+        "stars": 62,
+        "pushedAt": "2026-10-07",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "multi-instructions",
@@ -457,7 +607,12 @@
         "ref": "v1.0.0"
       },
       "author": "abevol",
-      "homepage": "https://github.com/abevol/zcode-multi-instructions"
+      "homepage": "https://github.com/abevol/zcode-multi-instructions",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-06",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "multi-model-bridge",
@@ -468,7 +623,12 @@
         "ref": "v1.0.0"
       },
       "author": "Et3rW",
-      "homepage": "https://github.com/Et3rW/multi-model-bridge"
+      "homepage": "https://github.com/Et3rW/multi-model-bridge",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-08-18",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "my-plugin",
@@ -483,7 +643,12 @@
         "skills",
         "toolbox",
         "local-tools"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-03",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "novelist",
@@ -493,7 +658,12 @@
         "repo": "GlotTale/novelist"
       },
       "author": "Shen Yanshu",
-      "homepage": "https://github.com/GlotTale/novelist"
+      "homepage": "https://github.com/GlotTale/novelist",
+      "trust": {
+        "stars": 1,
+        "pushedAt": "2026-07-11",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "nowledge-mem-zcode",
@@ -513,7 +683,12 @@
         "mcp",
         "hooks",
         "commands"
-      ]
+      ],
+      "trust": {
+        "stars": 3,
+        "pushedAt": "2026-09-21",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "oh-my-zcode-slim",
@@ -533,7 +708,12 @@
         "orchestration",
         "subagents",
         "agents"
-      ]
+      ],
+      "trust": {
+        "stars": 2,
+        "pushedAt": "2026-08-27",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "oh-story",
@@ -544,7 +724,12 @@
         "ref": "v0.8.4"
       },
       "author": "zenstory-ai",
-      "homepage": "https://github.com/zenstory-ai/oh-story-claudecode"
+      "homepage": "https://github.com/zenstory-ai/oh-story-claudecode",
+      "trust": {
+        "stars": 7314,
+        "pushedAt": "2026-10-03",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "omz",
@@ -558,7 +743,12 @@
         "name": "OMZ",
         "url": "https://github.com/djt889/OhMyZcode"
       },
-      "homepage": "https://github.com/djt889/OhMyZcode"
+      "homepage": "https://github.com/djt889/OhMyZcode",
+      "trust": {
+        "stars": 3,
+        "pushedAt": "2026-09-03",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "open-dynamic-workflows",
@@ -578,7 +768,12 @@
         "subagent",
         "fan-out",
         "parallel"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-14",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "opencode-importer",
@@ -588,7 +783,12 @@
         "repo": "thanhndv212/zcode-opencode-importer"
       },
       "author": "Z.ai",
-      "homepage": "https://github.com/thanhndv212/zcode-opencode-importer"
+      "homepage": "https://github.com/thanhndv212/zcode-opencode-importer",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-06-18",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "pi-commands",
@@ -598,7 +798,12 @@
         "repo": "buihongduc132/zcode-pi-cmd-loader"
       },
       "author": "bhd",
-      "homepage": "https://github.com/buihongduc132/zcode-pi-cmd-loader"
+      "homepage": "https://github.com/buihongduc132/zcode-pi-cmd-loader",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-07-26",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "prompt-optimizer",
@@ -608,7 +813,12 @@
         "repo": "goodie1972/prompt-optimizer"
       },
       "author": "goodie1972",
-      "homepage": "https://github.com/goodie1972/prompt-optimizer"
+      "homepage": "https://github.com/goodie1972/prompt-optimizer",
+      "trust": {
+        "stars": 1,
+        "pushedAt": "2026-08-28",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "pstack",
@@ -625,7 +835,12 @@
         "workflow",
         "principles",
         "agent-style"
-      ]
+      ],
+      "trust": {
+        "stars": 9,
+        "pushedAt": "2026-08-20",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "quantpylab-agents",
@@ -635,7 +850,12 @@
         "repo": "hrzzzrh/QuantPyLab"
       },
       "author": "hrzzzrh",
-      "homepage": "https://github.com/hrzzzrh/QuantPyLab"
+      "homepage": "https://github.com/hrzzzrh/QuantPyLab",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-25",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "remotion",
@@ -653,7 +873,12 @@
         "programmatic-video",
         "animation",
         "render"
-      ]
+      ],
+      "trust": {
+        "stars": 1,
+        "pushedAt": "2026-10-06",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "scientific-research-plugin",
@@ -674,7 +899,12 @@
         "zotero",
         "latex",
         "peer-review"
-      ]
+      ],
+      "trust": {
+        "stars": 6,
+        "pushedAt": "2026-10-07",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "senmu-buildos",
@@ -695,7 +925,12 @@
         "agent-skills",
         "ai-agents",
         "project-management"
-      ]
+      ],
+      "trust": {
+        "stars": 2,
+        "pushedAt": "2026-10-02",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "session-sync",
@@ -705,7 +940,12 @@
         "repo": "Thebored1/session-sync"
       },
       "author": "Thebored1",
-      "homepage": "https://github.com/Thebored1/session-sync"
+      "homepage": "https://github.com/Thebored1/session-sync",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-07-10",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "silverbullet-mcp",
@@ -725,7 +965,12 @@
         "notes",
         "markdown",
         "knowledge-base"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-04",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "software-project-governance",
@@ -739,7 +984,12 @@
         "name": "peterwangze",
         "url": "https://github.com/peterwangze"
       },
-      "homepage": "https://github.com/peterwangze/software-project-governance"
+      "homepage": "https://github.com/peterwangze/software-project-governance",
+      "trust": {
+        "stars": 1,
+        "pushedAt": "2026-10-06",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "strictlybetter",
@@ -757,7 +1007,12 @@
         "optimization",
         "benchmarking",
         "noise-floor"
-      ]
+      ],
+      "trust": {
+        "stars": 1,
+        "pushedAt": "2026-09-03",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "taskforge",
@@ -767,7 +1022,12 @@
         "repo": "mrlfarano/taskforge"
       },
       "author": "TaskForge",
-      "homepage": "https://github.com/mrlfarano/taskforge"
+      "homepage": "https://github.com/mrlfarano/taskforge",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-08-26",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "taskswarm",
@@ -777,7 +1037,12 @@
         "repo": "Wersky/taskswarm"
       },
       "author": "Wersky",
-      "homepage": "https://github.com/Wersky/taskswarm"
+      "homepage": "https://github.com/Wersky/taskswarm",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-29",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "terraphim-skills-intro",
@@ -795,7 +1060,12 @@
         "learning",
         "memory",
         "knowledge-graph"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-16",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "testcase",
@@ -813,7 +1083,12 @@
         "test-cases",
         "qa",
         "quality-assurance"
-      ]
+      ],
+      "trust": {
+        "stars": 4,
+        "pushedAt": "2026-10-06",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "thinloop",
@@ -830,7 +1105,12 @@
         "user-experience",
         "ui-design",
         "software-architecture"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-01",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "threejs-game-skills",
@@ -846,7 +1126,12 @@
         "game",
         "webgl",
         "skills"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-02",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "threejs-skills",
@@ -861,7 +1146,12 @@
         "threejs",
         "webgl",
         "skills"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-02",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "tony-agents-pack",
@@ -872,7 +1162,12 @@
         "ref": "v4.2.3"
       },
       "author": "tony-apan",
-      "homepage": "https://github.com/tony-apan/zcode_skills"
+      "homepage": "https://github.com/tony-apan/zcode_skills",
+      "trust": {
+        "stars": 4,
+        "pushedAt": "2026-09-22",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "web-3d-stack",
@@ -889,7 +1184,12 @@
         "tsl",
         "shadcn",
         "game"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-03",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "xuexitong-skill",
@@ -899,7 +1199,12 @@
         "repo": "Han-maker-wp/xuexitong-skill"
       },
       "author": "Han-maker-wp",
-      "homepage": "https://github.com/Han-maker-wp/xuexitong-skill"
+      "homepage": "https://github.com/Han-maker-wp/xuexitong-skill",
+      "trust": {
+        "stars": 3,
+        "pushedAt": "2026-09-19",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zcode-auto-resume",
@@ -909,7 +1214,12 @@
         "repo": "cv-superding/zcode-auto-resume"
       },
       "author": "zcode-auto-resume contributors",
-      "homepage": "https://github.com/cv-superding/zcode-auto-resume"
+      "homepage": "https://github.com/cv-superding/zcode-auto-resume",
+      "trust": {
+        "stars": 4,
+        "pushedAt": "2026-09-14",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zcode-feature-dev",
@@ -926,7 +1236,12 @@
         "code-explorer",
         "code-architect",
         "code-reviewer"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-16",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zcode-feishu-bridge",
@@ -944,7 +1259,12 @@
         "zcode",
         "streaming-card",
         "bridge"
-      ]
+      ],
+      "trust": {
+        "stars": 4,
+        "pushedAt": "2026-09-26",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zcode-plugin-honcho",
@@ -962,7 +1282,12 @@
         "persistent-memory",
         "context",
         "hooks"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-02",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zcode-plugin-langfuse",
@@ -980,7 +1305,12 @@
         "tracing",
         "telemetry",
         "hooks"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-02",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zcode-safe-setup",
@@ -993,7 +1323,12 @@
         "name": "QianQIUlp and Codex Safe Setup Contributors",
         "url": "https://github.com/QianQIUlp"
       },
-      "homepage": "https://github.com/QianQIUlp/zcode-safe-setup"
+      "homepage": "https://github.com/QianQIUlp/zcode-safe-setup",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-08-16",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zcode-skins",
@@ -1004,7 +1339,12 @@
         "ref": "v1.1.2"
       },
       "author": "CaptainMusX",
-      "homepage": "https://github.com/CaptainMusX/zcode-skins"
+      "homepage": "https://github.com/CaptainMusX/zcode-skins",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-05",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zcode-tarkov",
@@ -1015,7 +1355,12 @@
         "ref": "v0.2.3"
       },
       "author": "zcode-tarkov contributors",
-      "homepage": "https://github.com/BakaronLab/zcode-tarkov"
+      "homepage": "https://github.com/BakaronLab/zcode-tarkov",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-19",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zcode-tokenspeed",
@@ -1025,7 +1370,12 @@
         "repo": "c80361619/zcode-toolkit"
       },
       "author": "c80361619",
-      "homepage": "https://github.com/c80361619/zcode-toolkit"
+      "homepage": "https://github.com/c80361619/zcode-toolkit",
+      "trust": {
+        "stars": 5,
+        "pushedAt": "2026-09-24",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zcode-vision",
@@ -1035,7 +1385,12 @@
         "repo": "5uyuz/zcode-vision-plugin"
       },
       "author": "zcode-vision contributors",
-      "homepage": "https://github.com/5uyuz/zcode-vision-plugin"
+      "homepage": "https://github.com/5uyuz/zcode-vision-plugin",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-08-02",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zcode-wakatime",
@@ -1055,7 +1410,12 @@
         "hooks",
         "zcode",
         "glm"
-      ]
+      ],
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-06",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zen-useragent",
@@ -1072,7 +1432,12 @@
         "free-models",
         "proxy",
         "user-agent"
-      ]
+      ],
+      "trust": {
+        "stars": 2,
+        "pushedAt": "2026-08-23",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zmem",
@@ -1086,7 +1451,12 @@
         "name": "Brett",
         "url": "https://github.com/zaxbysauce"
       },
-      "homepage": "https://github.com/zaxbysauce/zmem"
+      "homepage": "https://github.com/zaxbysauce/zmem",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-10-06",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zpeak",
@@ -1096,7 +1466,12 @@
         "repo": "amurru/zpeak"
       },
       "author": "amurru",
-      "homepage": "https://github.com/amurru/zpeak"
+      "homepage": "https://github.com/amurru/zpeak",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-07",
+        "fetchedAt": "2026-10-07"
+      }
     },
     {
       "name": "zpet",
@@ -1107,7 +1482,12 @@
         "ref": "v0.4.7"
       },
       "author": "shiaige",
-      "homepage": "https://github.com/shiaige/ZPet"
+      "homepage": "https://github.com/shiaige/ZPet",
+      "trust": {
+        "stars": 0,
+        "pushedAt": "2026-09-06",
+        "fetchedAt": "2026-10-07"
+      }
     }
   ]
 }
