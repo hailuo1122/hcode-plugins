@@ -17,7 +17,11 @@ hailuo1122/hcode-plugins
 ## 已收录插件
 
 <!-- plugins:start -->
-_暂无插件 —— 欢迎成为第一个投稿者。_
+| 插件 | 说明 | 来源 | 版本钉 | 标签 |
+| --- | --- | --- | --- | --- |
+| ⭐ `engram` | Evidence-based learning engine: first-principles curricula, generation-first Socratic tutoring, free-recall verification with receipts, FSRS-scheduled memory, and interactive explorable artifacts. Learn anything; keep it. | [nagisanzenin/engram](https://github.com/nagisanzenin/engram) | `v1.15.1` | learning, memory, productivity |
+
+共 1 个插件。
 <!-- plugins:end -->
 
 ## 投稿插件
