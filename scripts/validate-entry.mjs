@@ -157,11 +157,25 @@ function validateSource(file, source) {
   return kind;
 }
 
-async function githubRequest(apiPath) {
+async function githubRequest(apiPath, { attempts = 3 } = {}) {
   const headers = { accept: "application/vnd.github+json", "user-agent": "hcode-community-index" };
   const token = process.env.GITHUB_TOKEN?.trim();
   if (token) headers.authorization = `Bearer ${token}`;
-  return fetch(`https://api.github.com${apiPath}`, { headers });
+  let response;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    response = await fetch(`https://api.github.com${apiPath}`, { headers });
+    // 403/429 多为共享 IP 的二级限流（core 额度未必耗尽），短暂退避后重试；
+    // 重试仍失败则按真实响应上报，避免把限流伪装成条目错误。
+    if (response.status !== 403 && response.status !== 429) return response;
+    if (attempt >= attempts) return response;
+    const retryAfterSeconds = Number(response.headers.get("retry-after"));
+    const waitMs =
+      Number.isFinite(retryAfterSeconds) && retryAfterSeconds > 0
+        ? Math.min(retryAfterSeconds * 1000, 30_000)
+        : 5_000 * attempt;
+    await new Promise((resolve) => setTimeout(resolve, waitMs));
+  }
+  return response;
 }
 
 async function checkGithubSource(file, name, source) {

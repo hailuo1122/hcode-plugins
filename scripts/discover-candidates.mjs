@@ -26,6 +26,21 @@ if (!token) {
 
 const INDEX_REPOSITORY = "hailuo1122/hcode-plugins";
 const NAME_PATTERN = /^[a-z0-9][a-z0-9._-]{0,127}$/;
+// 官方内置插件名：社区条目不允许同名占位（客户端里会展示成两个同名的店卡，误导用户）。
+// 与 apps/zcode-cli 的 official-plugin-definitions 对齐，改动时两边同步。
+const RESERVED_PLUGIN_NAMES = new Set([
+  "browser-use",
+  "computer-use",
+  "documents",
+  "image-search",
+  "node-repl-host",
+  "pdf",
+  "plugin-creator",
+  "presentations",
+  "skill-creator",
+  "spreadsheets",
+  "zcode-guide",
+]);
 
 // 代码搜索在 CI 共享 IP 上常触发二级限流（429/403），这里退避重试；
 // 调用方对代码搜索这类可降级通道用软失败，不阻塞整次发现。
@@ -64,6 +79,12 @@ function normalizeAuthor(value, fallbackLogin) {
     if (url) return { url };
   }
   return fallbackLogin;
+}
+
+async function readManifestAt(fullName, manifestPath, ref) {
+  const query = ref ? `?ref=${encodeURIComponent(ref)}` : "";
+  const file = await ghJson(`/repos/${fullName}/contents/${manifestPath}${query}`);
+  return JSON.parse(Buffer.from(file.content, "base64").toString("utf8"));
 }
 
 function readExistingNames() {
@@ -145,10 +166,7 @@ for (const [fullName, repoPaths] of candidatesByRepo) {
       : ".zcode-plugin/plugin.json";
     let manifest;
     try {
-      const file = await ghJson(
-        `/repos/${fullName}/contents/${manifestPath}?ref=${encodeURIComponent(repo.default_branch)}`,
-      );
-      manifest = JSON.parse(Buffer.from(file.content, "base64").toString("utf8"));
+      manifest = await readManifestAt(fullName, manifestPath, repo.default_branch);
     } catch {
       skipped.push(`${fullName}/${repoPath || "."}: 读取 plugin.json 失败`);
       continue;
@@ -156,6 +174,10 @@ for (const [fullName, repoPaths] of candidatesByRepo) {
     const name = typeof manifest.name === "string" ? manifest.name.trim() : "";
     if (!NAME_PATTERN.test(name)) {
       skipped.push(`${fullName}/${repoPath || "."}: manifest name 非法`);
+      continue;
+    }
+    if (RESERVED_PLUGIN_NAMES.has(name)) {
+      skipped.push(`${fullName}/${repoPath || "."}: "${name}" 与官方插件同名`);
       continue;
     }
     if (existingNames.has(name)) {
@@ -171,18 +193,29 @@ for (const [fullName, repoPaths] of candidatesByRepo) {
       continue;
     }
     // 只有与 manifest version 精确匹配的 tag 才钉：v<version> 或 <version>。
-    // 找不到匹配 tag 就不钉（validate 会给出 warning，由维护者在 PR 里决定是否补）。
+    // 钉之前先确认 tag 上的 manifest 与条目同名——否则该 tag 是插件存在之前的旧形态，
+    // 会被 entry 校验拒绝（历史上就出现过这种候选把整批 PR 拦下）。
+    // 名称不一致或读不到就不钉（validate 会给 warning，由维护者在 PR 里决定是否补钉）。
     let ref;
     const version = typeof manifest.version === "string" ? manifest.version.trim() : "";
     if (version) {
       for (const tag of [`v${version}`, version]) {
         try {
           await ghJson(`/repos/${fullName}/git/ref/tags/${encodeURIComponent(tag)}`);
-          ref = tag;
-          break;
         } catch {
-          // tag 不存在，试下一个形态
+          continue; // tag 不存在，试下一个形态
         }
+        try {
+          const pinned = await readManifestAt(fullName, manifestPath, tag);
+          if (pinned.name === name) {
+            ref = tag;
+          } else {
+            skipped.push(`${fullName}/${repoPath || "."}: tag ${tag} 上 manifest 名称不一致，改为不钉`);
+          }
+        } catch {
+          skipped.push(`${fullName}/${repoPath || "."}: tag ${tag} 上读不到 plugin.json，改为不钉`);
+        }
+        break;
       }
     }
     const keywords = Array.isArray(manifest.keywords)
