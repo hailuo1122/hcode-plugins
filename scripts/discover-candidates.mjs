@@ -27,18 +27,31 @@ if (!token) {
 const INDEX_REPOSITORY = "hailuo1122/hcode-plugins";
 const NAME_PATTERN = /^[a-z0-9][a-z0-9._-]{0,127}$/;
 
-async function ghJson(apiPath) {
-  const response = await fetch(`https://api.github.com${apiPath}`, {
-    headers: {
-      accept: "application/vnd.github+json",
-      authorization: `Bearer ${token}`,
-      "user-agent": "hcode-community-index",
-    },
-  });
-  if (!response.ok) {
-    throw new Error(`GitHub API ${response.status}: ${apiPath}`);
+// 代码搜索在 CI 共享 IP 上常触发二级限流（429/403），这里退避重试；
+// 调用方对代码搜索这类可降级通道用软失败，不阻塞整次发现。
+async function ghJson(apiPath, { attempts = 1, baseDelayMs = 15_000 } = {}) {
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    const response = await fetch(`https://api.github.com${apiPath}`, {
+      headers: {
+        accept: "application/vnd.github+json",
+        authorization: `Bearer ${token}`,
+        "user-agent": "hcode-community-index",
+      },
+    });
+    if (response.ok) return response.json();
+    lastError = new Error(`GitHub API ${response.status}: ${apiPath}`);
+    const retryable = response.status === 429 || response.status === 403;
+    if (!retryable || attempt >= attempts) throw lastError;
+    const retryAfterSeconds = Number(response.headers.get("retry-after"));
+    const waitMs =
+      Number.isFinite(retryAfterSeconds) && retryAfterSeconds > 0
+        ? Math.min(retryAfterSeconds * 1000, 90_000)
+        : Math.min(baseDelayMs * attempt, 90_000);
+    console.warn(`  限流（${response.status}），${Math.round(waitMs / 1000)}s 后重试（${attempt}/${attempts}）`);
+    await new Promise((resolve) => setTimeout(resolve, waitMs));
   }
-  return response.json();
+  throw lastError;
 }
 
 function normalizeAuthor(value, fallbackLogin) {
@@ -76,20 +89,36 @@ function addCandidate(fullName, repoPath) {
   candidatesByRepo.set(fullName, paths);
 }
 
-console.log("发现渠道 1/2: topic hcode-plugin");
-const topicResult = await ghJson("/search/repositories?q=topic:hcode-plugin&per_page=100");
-for (const item of topicResult.items ?? []) addCandidate(item.full_name, "");
+// 渠道 1/2：官方约定 topic（精确、限速宽松）
+for (const topic of ["hcode-plugin", "zcode-plugin"]) {
+  console.log(`发现渠道: topic:${topic}`);
+  try {
+    const result = await ghJson(
+      `/search/repositories?q=${encodeURIComponent(`topic:${topic}`)}&per_page=100`,
+      { attempts: 3 },
+    );
+    for (const item of result.items ?? []) addCandidate(item.full_name, "");
+  } catch (error) {
+    console.warn(`  跳过（${error.message}）`);
+  }
+}
 
-console.log("发现渠道 2/2: 代码搜索 .zcode-plugin/plugin.json");
-const codeResult = await ghJson(
-  "/search/code?q=filename:plugin.json+path:.zcode-plugin&per_page=100",
-);
-for (const item of codeResult.items ?? []) {
-  const itemPath = typeof item.path === "string" ? item.path : "";
-  const match = itemPath.match(/^(.*?)\.zcode-plugin\/plugin\.json$/u);
-  if (!match) continue;
-  const repoPath = (match[1] ?? "").replace(/\/+$/u, "");
-  addCandidate(item.repository?.full_name, repoPath);
+// 渠道 2/2：代码搜索（精确，能发现 monorepo 子目录；共享 IP 上常被限流，失败不阻塞）
+console.log("发现渠道: 代码搜索 .zcode-plugin/plugin.json");
+try {
+  const codeResult = await ghJson(
+    "/search/code?q=filename:plugin.json+path:.zcode-plugin&per_page=100",
+    { attempts: 5, baseDelayMs: 20_000 },
+  );
+  for (const item of codeResult.items ?? []) {
+    const itemPath = typeof item.path === "string" ? item.path : "";
+    const match = itemPath.match(/^(.*?)\.zcode-plugin\/plugin\.json$/u);
+    if (!match) continue;
+    const repoPath = (match[1] ?? "").replace(/\/+$/u, "");
+    addCandidate(item.repository?.full_name, repoPath);
+  }
+} catch (error) {
+  console.warn(`  代码搜索不可用，本次跳过（${error.message}）`);
 }
 console.log(`共 ${candidatesByRepo.size} 个候选仓库`);
 
