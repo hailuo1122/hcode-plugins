@@ -1,0 +1,20 @@
+{
+  "name": "blender-design",
+  "description": "Design, review, and export Blender scenes through controlled operations, visual milestones, and recovery checkpoints.",
+  "source": {
+    "source": "github",
+    "repo": "full-aigc-plugins/blender-design-plugin"
+  },
+  "author": {
+    "name": "Full Stack Skills / PartMe.AI",
+    "url": "https://github.com/full-aigc-plugins"
+  },
+  "homepage": "https://github.com/full-aigc-plugins/blender-design-plugin",
+  "tags": [
+    "blender",
+    "3d-design",
+    "modeling",
+    "animation",
+    "export"
+  ]
+}

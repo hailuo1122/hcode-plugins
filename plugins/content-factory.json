@@ -1,0 +1,16 @@
+{
+  "name": "content-factory",
+  "description": "Create, review, format, and export governed content for 16 channels.",
+  "source": {
+    "source": "github",
+    "repo": "full-aigc-plugins/content-factory-plugin",
+    "ref": "v1.0.0-rc.2"
+  },
+  "author": "Full AIGC Plugins",
+  "homepage": "https://github.com/full-aigc-plugins/content-factory-plugin",
+  "tags": [
+    "content",
+    "editorial",
+    "workflow"
+  ]
+}
